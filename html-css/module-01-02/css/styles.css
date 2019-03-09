@@ -7,7 +7,7 @@
     box-sizing: inherit;
     }
     
-    img{
+img{
     display: block;
     max-width: 100%;
     height: auto;
@@ -53,11 +53,10 @@ img{
 
 .site-navigation li{
     display: inline-block;
-    margin: 60px;
 }
 
 .site-navigation li :not(:last-child){
-    margin-right: 60px;
+    margin-right: 60px; 
 }
 
 .site-navigation a{
