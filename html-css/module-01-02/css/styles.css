@@ -7,7 +7,11 @@
     box-sizing: inherit;
     }
     
+<<<<<<< HEAD
 img{
+=======
+    img{
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
     display: block;
     max-width: 100%;
     height: auto;
@@ -32,25 +36,47 @@ img{
 }
 
 .page-header{
+<<<<<<< HEAD
     margin-bottom: 0;   
+=======
+    margin-bottom: 60px;
+    background-color: #ffffff;
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
     text-align: center;
 }
 
 .page-nav{
+<<<<<<< HEAD
     padding: 60px;
     margin: 0;
+=======
+    padding: 56px 0;
+}
+
+.site-logo{
+    display: inline-block;
+    vertical-align: middle;
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
 }
 
 .site-navigation{
     display: inline-block;
     vertical-align: middle;
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     font-size: 0;
+=======
+    width: 900;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
     list-style: none;
     text-align: center;
 }
 
+<<<<<<< HEAD
 .site-navigation-link{
     margin-right: 100px;
 }
@@ -61,21 +87,39 @@ img{
 
 .site-navigation a{
     display: block;
+=======
+.site-navigation li{
+    display: inline-block;
+}
+
+.site-navigation li: :not(:last-child){
+    margin-right: 60px;
+}
+
+.site-navigation a{
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 16px;
+<<<<<<< HEAD
     font-size: 14px;
+=======
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
 }
 
 .site-navigation a :hover,
 .site-navigation a :focus {
+<<<<<<< HEAD
     columns: #25b4f5;
 }
 
 /* FEATURES SECTION*/
 .features{
     margin-bottom: 36px;
+=======
+    color: #25b4f5;
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
 }
 
 /* fearures list*/
@@ -83,17 +127,25 @@ img{
     list-style: none;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     font-size: 0;
+=======
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
 }
 
 .features-list-item{
     display: inline-block;
     width: 420px;
     margin-right: 60px;
+<<<<<<< HEAD
+=======
+    margin-bottom: 45px;
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
     padding: 0;
     text-align: left;
 }
 
+<<<<<<< HEAD
 .features-list-item:nth-child(2n){
     margin-right: 0;
 }
@@ -133,4 +185,18 @@ img{
     width: 164px;
     cursor: pointer;
     text-align: center;
+=======
+.features-list-item :nth-child(2n){
+    margin-right: 0;
+}
+
+.features-list-item h2{
+    margin-bottom: 45px;
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.features-list-item P{
+    font-size: 14px;
+>>>>>>> eec90514a7ad533c5e431adc20a42ce181a6d271
 }
