@@ -20,6 +20,11 @@ body{
     line-height: 21px;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container{
     width: 900px;
     margin: 0 auto;
@@ -32,13 +37,13 @@ body{
 }
 
 .page-nav{
-    padding: 0;
+    padding: 60px;
+    margin: 0;
 }
 
 .site-navigation{
     display: inline-block;
     vertical-align: middle;
-    width: 900px;
     margin: 0;
     padding: 0;
     font-size: 0;
@@ -46,17 +51,17 @@ body{
     text-align: center;
 }
 
-.site-navigation li{
-    display: inline-block;
+.site-navigation-link{
+    margin-right: 100px;
 }
 
-.site-navigation li :not(:last-child){
-    margin-right: 60px; 
+.site-navigation-link :last-child{
+    margin-right: 0;
 }
 
 .site-navigation a{
     display: block;
-    color: #721515;
+    color: #626262;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 16px;
@@ -65,7 +70,7 @@ body{
 
 .site-navigation a :hover,
 .site-navigation a :focus {
-    color: red;
+    columns: #25b4f5;
 }
 
 /* FEATURES SECTION*/
@@ -89,45 +94,43 @@ body{
     text-align: left;
 }
 
-.features-list-item :nth-child(2n){
+.features-list-item:nth-child(2n){
     margin-right: 0;
 }
 
-.features-list-item :nth-last-child(-n+2){
+.features-list-item:nth-last-child(-n+2){
     margin-bottom: 0;
 }
 
+.intro{
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 38px;
+}
 .features-list-item h2{
     margin: 0;
-    margin-bottom: 44px;
     line-height: 18px;
     font-size: 14px;
-}
-
-.features-list-item p{
-    font-size: 14px;
-    margin: 0;
-}
-
-.intro{
-    margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 44px;
 }
 
 .content{
+    font-size: 14px;
     margin: 0;
+    margin-bottom: 134px;
 }
 
 .image{
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
 }
 
 .download-button{
-    margin: 0;
+    margin: 0 auto;
     padding: 20px 34px;
     font-size: 16px;
     line-height: 21px;
+    width: 164px;
     cursor: pointer;
     text-align: center;
 }
