@@ -20,11 +20,6 @@ body{
     line-height: 21px;
 }
 
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 .container{
     width: 900px;
     margin: 0 auto;
@@ -114,10 +109,6 @@ img{
     margin: 0;
 }
 
-.image{
-    margin: 0;
-    margin-bottom: 38px;
-}
 .intro{
     margin: 0;
     margin-bottom: 36px;
@@ -126,6 +117,12 @@ img{
 .content{
     margin: 0;
 }
+
+.image{
+    margin: 0;
+    margin-bottom: 38px;
+}
+
 .download-button{
     margin: 0;
     padding: 20px 34px;
