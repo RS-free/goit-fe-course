@@ -65,13 +65,8 @@ img{
     font-size:14px;
 }
 
-.site-navigation-list:hover,
-.site-navigation-list:focus {
-    color:#25b4f5;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
     color:#25b4f5;
 }
 
