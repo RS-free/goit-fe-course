@@ -33,6 +33,7 @@ img{
 
 .page-header{  
     text-align: center;
+    padding: 30px 0;
 }
 
 .page-nav{
@@ -41,17 +42,14 @@ img{
 }
 
 .site-navigation{
-    display: inline-block;
-    vertical-align: middle;
     margin: 0;
     padding: 0;
     font-size: 0;
-    list-style: none;
-    text-align: center;
 }
 
 .site-navigation-item{
     margin-right: 100px;
+    display: inline-block;
 }
 
 .site-navigation-item :last-child{
@@ -83,6 +81,7 @@ img{
     margin: 0;
     padding: 0;
     font-size: 0;
+    margin-bottom: 30px;
 }
 
 .features-list-item{
@@ -90,8 +89,8 @@ img{
     width: 420px;
     margin-right: 60px;
     padding: 0;
-    text-align: left;
     margin-bottom: 134px;
+    vertical-align: top;
 }
 
 .features-list-item:nth-child(2n){
@@ -109,7 +108,7 @@ img{
 }
 .features-list-item h2{
     margin: 0;
-    line-height: 18px;
+    line-height: 36px;
     font-size: 30px;
     margin-bottom: 44px;
 }
