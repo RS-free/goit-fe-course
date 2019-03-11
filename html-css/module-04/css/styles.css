@@ -128,6 +128,10 @@ img{
     vertical-align: top;
 }
 
+.features-list-item:hover::after{
+    
+}
+
 .features-list-item:last-child{
     margin-bottom:0;
     margin-right: 30px;
