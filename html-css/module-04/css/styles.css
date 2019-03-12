@@ -250,6 +250,10 @@ img{
     margin:0;
 }
 
+.latest-image {
+    height: 261px;
+}
+
 .download-button{
     display: block;
     padding:20px 34px;
