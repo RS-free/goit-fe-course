@@ -92,7 +92,6 @@ img{
 }
 
 .main-content-list::after {
-    display: block;
     content:"";
     width:166px;
     height:8px;
