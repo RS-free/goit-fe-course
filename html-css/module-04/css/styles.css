@@ -31,6 +31,11 @@ img{
     bottom:o;
 }
 
+.clearfix {
+    content: "";
+    display: block;
+}
+
 .page-header {  
     text-align: center;
     padding:30px 0;
@@ -38,9 +43,8 @@ img{
 
 .site-logo{
     margin: 0;
-    margin-left: 30px;
-    font-weight: none;
     float: left;
+    font-size: 40px;
 }
 
 .site-logo::first-letter {
@@ -60,8 +64,8 @@ img{
 }
 
 .site-navigation-item{
-    margin-right:30px;
     display: inline-block;
+    margin-left: 30px;
 }
 
 .site-navigation-link {
@@ -83,8 +87,7 @@ img{
     text-align: center;
     font-size:40px;
     color: #555252;
-    margin: 0;
-    margin-bottom:128px;
+    margin:102px;
     line-height:76px;
 }
 
@@ -114,24 +117,68 @@ img{
     margin:0;
     padding:0;
     font-size:0;
-    margin-bottom:30px;
 }
 
 .features-list-item{
-    display: inline-block;
+    float:left;
     width:255px;
-    margin-left:30px;
+    margin:0 30px 30px 0;
     padding:0;
     vertical-align: top;
 }
 
-.features-link:hover::after {
-    
+.features-list-item:nth-child(4n) {
+    margin-right: 0;
 }
 
-.features-list-item:last-child{
-    margin-bottom:0;
-    margin-right:30px;
+.features-link {
+    display:inline-block;
+}
+
+.features-link-item {
+    display:block;
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.features-link-item:hover,
+.features-link-item:focus {
+    color:#1abc9c;
+}
+
+.features-name {
+    display: block;
+    float: left;
+    margin:0;
+    padding:12px;
+    line-height: 40px;
+    font-size:18px;
+    color:#ffffff;
+    font-weight: bold;
+    background-color:#323232;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.price {
+    display: block;
+    float: right;
+    margin:0;
+    padding:12px;
+    line-height: 40px;
+    font-size:18px;
+    color:#ffffff;
+    font-weight: bold;
+    background-color: #8c8c8c;
+    text-transform: uppercase;
+}
+
+.features-link-item:hover .features-name {
+    background: #1abc9c;
+}
+
+.features-link-item:hover .price {
+    background: #7fd9c7;
 }
 
 /* LATEST SECTION*/
@@ -171,19 +218,12 @@ img{
     margin-bottom:38px;
 }
 
-.features-list-item h3{
-    margin:0;
-    line-height:30px;
-    font-size:18px;
-    margin-bottom:44px;
-}
-
 .latest-list-item h3{
     margin:0;
     line-height:30px;
     font-size:18px;
     margin-top: 18px;
-    margin-bottom:48px;
+    margin-bottom:32px;
     text-align: left;
 }
 
@@ -194,6 +234,16 @@ img{
     margin-bottom: 18px;
 }
 
+.latest-name::after {
+    display: block;
+    content:"";
+    width:136px;
+    height:2px;
+    border: solid 2px;
+    border-color: #1abc9c;
+    margin: 0;
+    background-color: #1abc9c;
+}
 .image{
     margin:0;
     margin-bottom:34px;
