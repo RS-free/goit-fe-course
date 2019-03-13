@@ -114,7 +114,6 @@ img{
 /* FEATURES SECTION*/
 .features{
     text-align: center;
-    margin: 0;
     padding: 0;
     padding-bottom:36px;
 }
@@ -147,7 +146,6 @@ img{
 .features-link-item {
     display:block;
     margin: 0;
-    margin-bottom: 34px;
 }
 
 .features-name {
