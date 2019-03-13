@@ -25,6 +25,10 @@ img{
     max-width:100%;
     height:auto;
 }
+
+.body{
+    background-color: #e9f0fd;
+}
 .container{
     max-width: 1110px;
     margin: 0 auto;
@@ -130,7 +134,6 @@ span{
     background-image: url('./../img/girls.JPG');
     background-size: cover;
     background-position: center;
-    background-attachment: 
     height: 604px;
     position: relative;
   }
