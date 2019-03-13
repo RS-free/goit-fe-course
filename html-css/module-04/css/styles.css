@@ -28,10 +28,10 @@ img{
 .container{
     max-width:1110px;
     margin:0 auto;
-    bottom:o;
+    bottom:0;
 }
 
-.clearfix {
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
@@ -46,6 +46,8 @@ img{
     float: left;
     margin: 0;
     font-size: 40px;
+    color: #626262;
+    text-decoration: none;
 }
 
 .site-logo::first-letter {
@@ -54,6 +56,7 @@ img{
 }
 
 .page-nav{
+    float: right;
     padding:0;
     margin:0;
 }
