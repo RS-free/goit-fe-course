@@ -26,9 +26,9 @@ img{
     height:auto;
 }
 .container{
-    max-width:1110px;
-    margin:0 auto;
-    bottom:0;
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .clearfix::after {
@@ -91,7 +91,20 @@ img{
     color:#1abc9c;
 }
 
-.main-content-list {
+.tour-content-list {
+    font-size:40px;
+    color: #ffffff;
+    margin:0;
+    line-height:76px;
+}
+
+span{
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.collection-content-list {
     text-align: center;
     font-size:40px;
     color: #555252;
@@ -100,7 +113,7 @@ img{
     line-height:76px;
 }
 
-.main-content-list::after {
+.collection-content-list::after {
     content:"";
     width:166px;
     height:8px;
@@ -111,23 +124,69 @@ img{
     background-color: #1abc9c;
 }
 
-/* FEATURES SECTION*/
-.features{
+/* TOUR SECTION*/
+
+.tour {
+    background-image: url('./../img/girls.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 603px;
+    position: relative;
+  }
+
+.tour-navigation{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+}
+.navigation-button{
+    padding:20px 34px;
+    font-size:16px;
+    line-height:21px;
+    width:100px;
+    cursor:pointer;
+    text-align:center;
+    color: aliceblue;
+    background-color: #1abc9c;
+    border-radius: 2px;
+    border: none;
+    position: absolute;
+    top: 5px;
+}
+
+.navigation-button.right {
+    right: 0;
+}
+
+.navigation-button.left {
+    left: 0;
+}
+
+.navigation-button:hover,
+.navigation-button:focus {
+    color:#ffffff;
+    font-weight: bold;
+}
+
+/* COLECTION SECTION*/
+.collection{
+    vertical-align: middle;
     margin: 0;
     padding: 0;
     padding-bottom:36px;
 }
 
 /* fearures list*/
-.features-list{
+.collection-list{
     list-style: none;
     margin:0;
     padding:0;
     font-size:0;
 }
 
-.features-list-item{
+.collection-list-item{
     float:left;
     width:255px;
     margin-right:30px;
@@ -135,22 +194,21 @@ img{
     vertical-align: top;
 }
 
-.features-list-item:nth-child(4n) {
+.collection-list-item:last-child{
     margin-right: 0;
 }
 
-.features-link {
+.collection-link {
     display: block;
     margin-top: 30px;
 }
 
-.features-link-item {
+.collection-link-item {
     display:block;
     margin: 0;
-    margin-bottom: 34px;
 }
 
-.features-name {
+.collection-name {
     display: block;
     float: left;
     margin:0;
@@ -179,102 +237,16 @@ img{
     text-transform: uppercase;
 }
 
-.features-link-item:hover .features-name {
+.collection-list-item:hover .collection-name {
     background: #1abc9c;
 }
 
-.features-link-item:hover .price {
+.collection-list-item:hover .price {
     background: #7fd9c7;
 }
 
-/* LATEST SECTION*/
-.latest{
-    padding-bottom:36px;
+.page-footer {
+    background-color: #323232;
     text-align: center;
-}
-
-/* latest list*/
-.latest-list{
-    list-style: none;
-    margin:0;
-    padding:0;
-    font-size:0;
-    margin-bottom:30px;
-}
-
-.latest-list-item{
-    float:left;
-    width:350px;
-    margin:0 30px 30px 0;
-    padding:0;
-    vertical-align: top;
-    margin-bottom:134px;
-}
-
-.latest-list-item:nth-child(3n){
-    margin-right:0;
-}
-
-.latest-list-item:nth-last-child(-n+3){
-    margin-bottom:0;
-}
-.intro{
-    font-size:14px;
-    margin:0;
-    margin-bottom:38px;
-}
-
-.latest-list-item h3{
-    margin:0;
-    line-height:30px;
-    font-size:18px;
-    margin-top: 18px;
-    margin-bottom:32px;
-    text-align: left;
-}
-
-.latest-content{
-    font-size:14px;
-    margin:0;
-    text-align: left;
-    margin-bottom: 18px;
-}
-
-.latest-name::after {
-    display: block;
-    content:"";
-    width:136px;
-    height:2px;
-    border: solid 2px;
-    border-color: #1abc9c;
-    margin: 0;
-    background-color: #1abc9c;
-}
-.image{
-    margin:0;
-}
-
-.latest-image {
-    height: 261px;
-    margin: 0;
-    margin-bottom: 118px;
-}
-
-.download-button{
-    display: block;
-    padding:20px 34px;
-    font-size:16px;
-    line-height:21px;
-    width:160px;
-    cursor:pointer;
-    text-align:center;
-    color: aliceblue;
-    background-color: #1abc9c;
-    border-radius: 2px;
-    border: none;
-}
-
-.download-button:hover,
-.download-button:focus {
-    color:#1abc9c;
+    color: #ffffff;
 }
