@@ -130,6 +130,7 @@ span{
     background-image: url('./../img/girls.JPG');
     background-size: cover;
     background-position: center;
+    background-attachment: 
     height: 604px;
     position: relative;
   }
