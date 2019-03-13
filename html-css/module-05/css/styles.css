@@ -1,0 +1,27 @@
+html{
+    box-sizing: border-box;
+    }
+    *,
+    *::before,
+    *::after{
+    box-sizing: inherit;
+    }
+    
+img{
+    display: block;
+    max-width:100%;
+    height: auto;
+    }
+
+body{
+    font-family: "Raleway", "Arial", sans-serif;
+    color: #6c7279;
+    font-size:14px;
+    line-height:21px;
+}
+
+img{
+    display: block;
+    max-width:100%;
+    height:auto;
+}

@@ -38,13 +38,13 @@ img{
 }
 
 .page-header {  
-    text-align: center;
+    vertical-align: middle;
     padding:30px 0;
 }
 
 .site-logo{
-    margin: 0;
     float: left;
+    margin: 0;
     font-size: 40px;
 }
 
@@ -110,10 +110,10 @@ img{
 
 /* FEATURES SECTION*/
 .features{
-    padding-bottom:36px;
     text-align: center;
     margin: 0;
     padding: 0;
+    padding-bottom:36px;
 }
 
 /* fearures list*/
@@ -127,7 +127,7 @@ img{
 .features-list-item{
     float:left;
     width:255px;
-    margin:0 30px 30px 0;
+    margin-right:30px;
     padding:0;
     vertical-align: top;
 }
@@ -138,6 +138,7 @@ img{
 
 .features-link {
     display: block;
+    margin-top: 30px;
 }
 
 .features-link-item {
@@ -269,7 +270,6 @@ img{
     border-radius: 2px;
     border: none;
 }
-
 
 .download-button:hover,
 .download-button:focus {
