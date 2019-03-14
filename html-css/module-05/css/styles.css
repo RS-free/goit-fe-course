@@ -214,7 +214,6 @@ img{
     border: 10px rgba(255,255,255,0.8);
     background-color: rgba(45,45,45,0.7);
     opacity: 0;
-    display: none;
 }
 
 .buttons_box{
@@ -318,7 +317,7 @@ img{
 }
 
 .heart:hover {
-    background: #1abc9c;
+    background-color: #1abc9c;
 }
 
 .arrow:hover {
@@ -326,11 +325,11 @@ img{
 }
 
 .clock:hover {
-    background: #1abc9c;
+    background-color: #1abc9c;
 }
 
 .market:hover {
-    background: #1abc9c;
+    background-color: #1abc9c;
 }
 
 .page-footer {
