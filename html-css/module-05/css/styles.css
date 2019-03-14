@@ -26,9 +26,6 @@ img{
     height:auto;
 }
 
-.body{
-    background-color: #e9f0fd;
-}
 .container{
     max-width: 1110px;
     margin: 0 auto;
@@ -72,8 +69,9 @@ img{
 }
 
 .site-navigation-item{
-    display: inline-block;
+    float: left;
     margin-right: 30px;
+    list-style-type: none;
 }
 
 .site-navigation-item:last-child {
@@ -96,13 +94,13 @@ img{
 }
 
 .tour-content-list {
-    font-size:40px;
+    font-size:60px;
     color: #ffffff;
     margin:0;
     line-height:76px;
 }
 
-span{
+.tour-text {
     font-size: 24px;
     color: #ffffff;
     text-transform: uppercase;
@@ -113,7 +111,6 @@ span{
     font-size:40px;
     color: #555252;
     margin:0;
-    padding: 102px;
     line-height:76px;
 }
 
@@ -154,7 +151,6 @@ span{
     text-align:center;
     color: aliceblue;
     background-color: #1abc9c;
-    border-radius: 2px;
     border: none;
     position: absolute;
     top: 5px;
@@ -174,11 +170,13 @@ span{
     font-weight: bold;
 }
 
-/* COLECTION SECTION*/
+/* COLLECTION SECTION*/
 .collection{
     vertical-align: middle;
     padding: 0;
     padding-bottom:36px;
+    background-color: #e9f0fd;
+    text-align: center;
 }
 
 /* fearures list*/
@@ -186,7 +184,7 @@ span{
     list-style: none;
     margin:0;
     padding:0;
-    font-size:0;
+    text-align: center;
 }
 
 .collection-list-item{
@@ -195,6 +193,7 @@ span{
     margin-right:30px;
     padding:0;
     vertical-align: top;
+    position: relative;
 }
 
 .collection-list-item:last-child{
@@ -203,16 +202,81 @@ span{
 
 .collection-link {
     display: block;
-    margin-top: 30px;
 }
 
-.collection-link-item {
-    display:block;
-    margin: 0;
+.box{
+    position: absolute;
+    width: 235px;
+    height: 260px;
+    z-index: 1;
+    top: 10px;
+    left: 11px;
+    border: 10px rgba(255,255,255,0.8);
+    background-color: rgba(45,45,45,0.7);
+}
+
+.buttons_box{
+    position: absolute;
+    width: 166px;
+    height: 105px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heart{
+    width: 50px;
+    height: 50px;
+    border: solid 1px;
+    color: #ffffff;
+    background: transparent;
+    background-image: url('../img/heart.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrow{
+    width: 50px;
+    height: 50px;
+    border: solid 1px;
+    color: #ffffff;
+    background: transparent;
+    background-image: url('../img/arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clock{
+    width: 50px;
+    height: 50px;
+    border: solid 1px;
+    color: #ffffff;
+    background: transparent;
+    background-image: url('../img/clock.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.market {
+    width: 165px;
+    height: 50px;
+    border: solid 1px;
+    color: #ffffff;
+    background: transparent;
+    background-image: url('../img/market.png');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    background-color: #323232;
+    font-size: 14px;
+}
+
+.add {
+    margin-left: 50px;
+    text-align: center;
 }
 
 .collection-name {
-    display: block;
     float: left;
     margin:0;
     padding:12px;
@@ -227,7 +291,6 @@ span{
 }
 
 .price {
-    display: block;
     float: right;
     margin:0;
     padding:12px;
@@ -240,17 +303,43 @@ span{
     text-transform: uppercase;
 }
 
-.collection-list-item:hover .collection-name {
+.collection-link:hover .collection-name {
     background: #1abc9c;
 }
 
-.collection-list-item:hover .price {
+.collection-link:hover .price {
     background: #7fd9c7;
+}
+
+.collection-link:hover .box {
+    display: block;
+}
+
+.heart:hover {
+    background: #1abc9c;
+}
+
+.arrow:hover {
+    background: #1abc9c;
+}
+
+.clock:hover {
+    background: #1abc9c;
+}
+
+.market:hover {
+    background: #1abc9c;
 }
 
 .page-footer {
     background-color: #323232;
     text-align: center;
+    font-size: 16px;
     color: #ffffff;
     padding: 40px 0;
+}
+
+span{
+    font-size: 16px;
+    color: #1abc9c;
 }
