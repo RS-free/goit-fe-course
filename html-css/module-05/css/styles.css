@@ -213,6 +213,8 @@ img{
     left: 11px;
     border: 10px rgba(255,255,255,0.8);
     background-color: rgba(45,45,45,0.7);
+    opacity: 0;
+    display: none;
 }
 
 .buttons_box{
@@ -229,7 +231,7 @@ img{
     height: 50px;
     border: solid 1px;
     color: #ffffff;
-    background: transparent;
+    background-color: transparent;
     background-image: url('../img/heart.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -240,7 +242,7 @@ img{
     height: 50px;
     border: solid 1px;
     color: #ffffff;
-    background: transparent;
+    background-color: transparent;
     background-image: url('../img/arrow.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -251,7 +253,7 @@ img{
     height: 50px;
     border: solid 1px;
     color: #ffffff;
-    background: transparent;
+    background-color: transparent;
     background-image: url('../img/clock.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -262,7 +264,7 @@ img{
     height: 50px;
     border: solid 1px;
     color: #ffffff;
-    background: transparent;
+    background-color: transparent;
     background-image: url('../img/market.png');
     background-position-x: center;
     background-repeat: no-repeat;
@@ -312,7 +314,7 @@ img{
 }
 
 .collection-link:hover .box {
-    display: block;
+    opacity: 1;
 }
 
 .heart:hover {
@@ -320,7 +322,7 @@ img{
 }
 
 .arrow:hover {
-    background: #1abc9c;
+    background-color: #1abc9c;
 }
 
 .clock:hover {
@@ -337,6 +339,10 @@ img{
     font-size: 16px;
     color: #ffffff;
     padding: 40px 0;
+}
+
+.footer_text{
+    margin: 0;
 }
 
 span{
