@@ -73,8 +73,8 @@ img{
     margin-right: 0;
 }
 
-.site-navigation-link {
-    display: block;
+.site_navigation_link {
+    display: flex;
     color: #a2e5d9;
     font-weight: bold;
     text-transform: uppercase;
