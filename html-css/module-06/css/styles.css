@@ -25,111 +25,57 @@ img{
     max-width:100%;
     height:auto;
 }
-
+/*do*/
 .container{
     max-width: 1201px;
     margin: 0 auto;
     width: 100%;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+/*do*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: 50px;
 }
-
-.page-header {  
-    vertical-align: middle;
-    padding:40px 0;
-}
-
-.site-logo{
-    float: left;
-    margin: 0;
+/*do*/
+.logo{
     font-size: 30px;
     color: #a2e5d9;
     text-decoration: none;
 }
-
-.page-nav{
-    float: right;
-    padding:0;
-    margin:0;
-}
-
-.site-navigation {
-    float: right;
-    margin:0;
-    padding:0;
-}
-
-.site-navigation-item{
-    float: left;
-    margin-right: 30px;
-    list-style-type: none;
-}
-
-.site-navigation-item:last-child {
-    margin-right: 0;
-}
-
-.site_navigation_link {
+/*do*/
+.site_navigation_link{
     display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-width: 492px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.site_navigation_item{
+    font-size: 14px;
     color: #a2e5d9;
-    font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
-    line-height:16px;
-    font-size:14px;
+    text-transform: uppercase;
 }
-
-.site-navigation a::after {
-    content:"";
-    width:50px;
-    height:8px;
-    border: solid 2px;
-    border-color: #f38181;
-    display: block;
-    margin: 0 auto;
-    background-color: #f38181;
-    opacity: 0;
-}
-
-
-.site-navigation a:hover,
-.site-navigation a:focus {
+/*do*/
+.site_navigation_link:hover,
+.site_navigation_link:focus {
     color:#f38181;
 }
 
-.site-navigation a::after:hover,
-.site-navigation a::after:focus{
+.site_navigation a::after:hover,
+.site_navigation a::after:focus{
     color: #f38181;
     opacity: 1;
 }
 
-.tour-content-list {
-    font-size:60px;
-    color: #ffffff;
-    margin:0;
-    line-height:76px;
-}
-
-.tour-text {
-    font-size: 24px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.collection-content-list {
-    text-align: center;
-    font-size:48px;
-    color: #555252;
-    margin:0;
-    margin-bottom: 120px;
-    line-height:76px;
-}
-
-.collection-content-list::after {
+/*do*/
+.section_name::after {
     content:"";
     width:166px;
     height:8px;
@@ -141,14 +87,6 @@ img{
 }
 
 /*We work with*/
-
-.tour {
-    background-image: url('./../img/girls.JPG');
-    background-size: cover;
-    background-position: center;
-    height: 604px;
-    position: relative;
-  }
 
 .tour-navigation{
     position: absolute;
@@ -336,11 +274,14 @@ img{
     background-color: #1abc9c;
 }
 
-.page-footer {
-    padding: 40px 0;
+.page_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 .footer_text{
+    display: flex;
     margin: 0;
     text-decoration: underline;
 }
@@ -348,4 +289,9 @@ img{
 span{
     font-size: 14px;
     color: #f59191;
+}
+
+.input_text{
+    font-size: 14px;
+    color: #555252;
 }
