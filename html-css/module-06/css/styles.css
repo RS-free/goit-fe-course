@@ -337,7 +337,7 @@ body{
     flex-flow: row wrap;
 }
 
-.footer_text{
+.text{
     margin: 0;
     text-decoration: underline;
 }
@@ -362,7 +362,6 @@ span{
     font-size: 14px;
     color: #555252;
     text-transform: capitalize;
-    position: absolute;
 }
 
 .footer_button{
@@ -376,7 +375,6 @@ span{
     cursor: pointer;
     border: none;
     padding: 0;
-    position: absolute;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
