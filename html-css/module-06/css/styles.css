@@ -207,8 +207,6 @@ body{
     height: 470px;
     display: flex;
     justify-content: space-between;
-    box-shadow:10px 10px 0 #95e1d3;
-    transform: translate(10px 10px);
 }
 /*div с ссылками на соцсети*/
 .profile_links{
@@ -219,6 +217,8 @@ body{
     height: 470px;
     z-index: 1;
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    transition: box-shadow 2s;
+    box-shadow:10px 10px 0 #95e1d3;
     opacity: 0;
     align-items: center;
     position: absolute;
@@ -244,6 +244,7 @@ body{
 
 .facebook:hover{
     background-color: #95e1d3;
+    border: none;
     width: 55px;
     height: 55px;
 }
