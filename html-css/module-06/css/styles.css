@@ -196,7 +196,9 @@ body{
 }
 /*div*/
 .employee{
-
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
 /*img*/
 .employee_image{
@@ -205,17 +207,19 @@ body{
     display: flex;
     justify-content: space-between;
     box-shadow:10px 10px 0 #95e1d3;
-    animation: alternate;
     transform: translate(10px 10px);
 }
-/*div*/
+/*div ul*/
 .profile_links{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
     width: 380px;
     height: 470px;
-    top: 10px;
-    border: 10px rgba(255,255,255,0.8);
+    z-index: 1;
     background-image: linear-gradient(to top, #fce38a, #f38181);
-    opacity: 0.2;
+    opacity: 1;
+    align-items: center;
 }
 
 .profile_links:hover,
@@ -224,52 +228,26 @@ body{
 }
 /*a*/
 .facebook{
-    width: 55px;
-    height: 55px;;
-    border: solid 1px;
-    color: #ffffff;
-    background-color: transparent;
     background-image: url('../img/facebook_1.png');
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0;
 }
 
-.twiter{
+.facebook:hover{
+    background-color: #95e1d3;
     width: 55px;
-    height: 55px;;
-    border: solid 1px;
-    color: #ffffff;
-    background-color: transparent;
+    height: 55px;
+}
+.twitter{
     background-image: url('../img/twitter_2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
 }
 
 .pinterest{
-    width: 55px;
-    height: 55px;;
-    border: solid 1px;
-    color: #ffffff;
-    background-color: transparent;
     background-image: url('../img/pinterest_3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
 }
 
 .instagram{
-    width: 55px;
-    height: 55px;
-    border: solid 1px;
-    color: #ffffff;
-    background-color: transparent;
     background-image: url('../img/instagram_4.png');
-    background-position: 10px;
-    background-repeat: no-repeat;
-    background-color: #323232;
-    padding: 0;
 }
 /*div*/
 .employee_topic{
