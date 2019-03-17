@@ -168,6 +168,7 @@ body{
 /*section_2*/
 .team{
     padding:100px 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 /*p*/
 .team_description{
@@ -187,7 +188,6 @@ body{
     justify-content: space-between;
     flex-flow: row wrap;
     height: 560px;
-    border-bottom: 1px solid #e5e5e5;
 }
 /*li*/
 .team_list_item{
@@ -335,11 +335,11 @@ body{
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    text-align: center;
 }
 
-.text{
-    margin: 0;
-    text-decoration: underline;
+.footer_text{
+    margin: auto 0;
 }
 
 span{
@@ -348,12 +348,11 @@ span{
 }
 
 .input_button{
-    max-width: 380px;
-    width: 100%;
     vertical-align: bottom;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin: 12px 0;
 }
 
 .input_text{
@@ -366,16 +365,12 @@ span{
 
 .footer_button{
     width: 151px;
-    height: 40px;
     font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
-    text-align:center;
     color: aliceblue;
     background-color: #95e1d3;
     cursor: pointer;
     border: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+    padding: 16px 32px;
 }
