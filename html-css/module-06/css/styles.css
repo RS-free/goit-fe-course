@@ -187,6 +187,7 @@ body{
     justify-content: space-between;
     flex-flow: row wrap;
     height: 560px;
+    border-bottom: 1px solid #e5e5e5;
 }
 /*li*/
 .team_list_item{
@@ -199,6 +200,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin-bottom: 32px;
 }
 /*img*/
 .employee_image{
@@ -209,7 +211,7 @@ body{
     box-shadow:10px 10px 0 #95e1d3;
     transform: translate(10px 10px);
 }
-/*div ul*/
+/*div с ссылками на соцсети*/
 .profile_links{
     display: flex;
     justify-content: space-between;
@@ -217,20 +219,28 @@ body{
     width: 380px;
     height: 470px;
     z-index: 1;
-    background-image: linear-gradient(to top, #fce38a, #f38181);
-    opacity: 1;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    opacity: 0;
     align-items: center;
+    position: absolute;
 }
-
+/*div с ссылками на соцсети*/
 .profile_links:hover,
 .profile_links:focus{
-    opacity: .7;
+    opacity: 1;
 }
 /*a*/
 .facebook{
     background-image: url('../img/facebook_1.png');
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    left: 20%;
 }
 
 .facebook:hover{
@@ -238,16 +248,62 @@ body{
     width: 55px;
     height: 55px;
 }
+
 .twitter{
     background-image: url('../img/twitter_2.png');
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+
+.twitter:hover{
+    background-color: #95e1d3;
+    width: 55px;
+    height: 55px;
 }
 
 .pinterest{
     background-image: url('../img/pinterest_3.png');
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.pinterest:hover{
+    background-color: #95e1d3;
+    width: 55px;
+    height: 55px;
 }
 
 .instagram{
     background-image: url('../img/instagram_4.png');
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+}
+
+.instagram:hover{
+    background-color: #95e1d3;
+    width: 55px;
+    height: 55px;
 }
 /*div*/
 .employee_topic{
@@ -271,6 +327,7 @@ body{
     text-transform: capitalize;
     font-size: 15px;
     color: #a8a8a8;
+    margin-bottom: 86px;
 }
 
 /*footer*/
@@ -281,7 +338,6 @@ body{
 }
 
 .footer_text{
-    display: flex;
     margin: 0;
     text-decoration: underline;
 }
@@ -291,7 +347,37 @@ span{
     color: #f59191;
 }
 
+.input_button{
+    max-width: 380px;
+    width: 100%;
+    vertical-align: bottom;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
 .input_text{
+    width: 229px;
+    height: 40px;
     font-size: 14px;
     color: #555252;
+    text-transform: capitalize;
+    position: absolute;
+}
+
+.footer_button{
+    width: 151px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align:center;
+    color: aliceblue;
+    background-color: #95e1d3;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
