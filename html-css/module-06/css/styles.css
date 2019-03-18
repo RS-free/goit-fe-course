@@ -14,12 +14,6 @@ body{
     line-height:21px;
 }
 
-@font-face{
-    font-family: "Kaushan Script";
-    font-style: normal;
-    font-weight: 700;
-    src: local('')
-}
 
 .container{
     max-width: 1201px;
@@ -192,7 +186,6 @@ body{
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    height: 560px;
 }
 /*li*/
 .team_list_item{
@@ -206,7 +199,14 @@ body{
     justify-content: space-between;
     flex-flow: row wrap;
     margin-bottom: 32px;
+    transition: .3s linear;
 }
+
+
+.team_list_item:hover .employee {
+    transform: translate(-10px, -10px);
+}
+
 /*img*/
 .employee_image{
     width: 380px;
@@ -223,17 +223,21 @@ body{
     height: 470px;
     z-index: 1;
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
-    transition: box-shadow 2s;
-    box-shadow:10px 10px 0 #95e1d3;
+    transition: .3s linear;
     opacity: 0;
     align-items: center;
     position: absolute;
 }
-/*div с ссылками на соцсети*/
-.profile_links:hover,
-.profile_links:focus{
-    opacity: 1;
+.team_list_item:hover .profile_links {
+    box-shadow:10px 10px 0 #95e1d3;
 }
+/*div с ссылками на соцсети*/
+.team_list_item:hover .profile_links,
+.team_list_item:focus .profile_links{
+    opacity: 1;
+
+}
+
 /*a*/
 .facebook{
     background-image: url('../img/facebook_1.png');
@@ -361,22 +365,13 @@ span{
     margin: 12px 0;
 }
 
-input{
-    font-size: 14px;
-    padding: auto 0;
-}
-
-::-webkit-input-placeholder{
-    color: #555252;
-    font-size: 14px;
-    padding: auto 0;
-}
 .input_text{
     width: 229px;
     height: 40px;
     font-size: 14px;
     color: #555252;
-    text-transform: capitalize;
+    font-style: italic;
+    
 }
 
 .footer_button{
@@ -390,3 +385,10 @@ input{
     border: none;
     padding: 16px 32px;
 }
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #555252;
+    font-size: 14px;
+    font-style: italic;
+  }
