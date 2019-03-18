@@ -14,6 +14,12 @@ body{
     line-height:21px;
 }
 
+@font-face{
+    font-family: "Kaushan Script";
+    font-style: normal;
+    font-weight: 700;
+    src: local('')
+}
 
 .container{
     max-width: 1201px;
@@ -355,6 +361,16 @@ span{
     margin: 12px 0;
 }
 
+input{
+    font-size: 14px;
+    padding: auto 0;
+}
+
+::-webkit-input-placeholder{
+    color: #555252;
+    font-size: 14px;
+    padding: auto 0;
+}
 .input_text{
     width: 229px;
     height: 40px;
