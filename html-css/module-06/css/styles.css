@@ -8,7 +8,7 @@ html{
     }
 
 body{
-    font-family: "Roboto", "Montserrat", "sans-serif", "Kaushan Script";
+    font-family: "Roboto", "Montserrat", "Kaushan Script", "sans-serif";
     color: #6c7279;
     font-size:14px;
     line-height:21px;
@@ -21,16 +21,18 @@ body{
     width: 100%;
 }
 
-/*header*/
+/*HEADER*/
 .header {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     margin-top: 50px;
+    font-family: 'Montserrat';
 }
 
 .logo{
     font-size: 30px;
+    font-weight: bold;
     color: #a2e5d9;
     text-decoration: none;
 }
@@ -99,6 +101,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
+    font-family: 'Montserrat';
     font-size: 30px;
     color: #333333;
     text-transform: uppercase;
@@ -117,7 +120,7 @@ body{
     border-color: #f38181;
     background-color: #f38181;
 }
-/*section_1*/
+/*SECTION_1*/
 .services{
     margin-top: 106px;
 }
@@ -164,7 +167,7 @@ body{
 .services_content{
     color: #b6b6b6;
 }
-/*section_2*/
+/*SECTION_2*/
 .team{
     padding:100px 0;
     border-bottom: 1px solid #e5e5e5;
@@ -202,11 +205,9 @@ body{
     transition: .3s linear;
 }
 
-
 .team_list_item:hover .employee {
     transform: translate(-10px, -10px);
 }
-
 /*img*/
 .employee_image{
     width: 380px;
@@ -228,6 +229,7 @@ body{
     align-items: center;
     position: absolute;
 }
+
 .team_list_item:hover .profile_links {
     box-shadow:10px 10px 0 #95e1d3;
 }
@@ -235,7 +237,6 @@ body{
 .team_list_item:hover .profile_links,
 .team_list_item:focus .profile_links{
     opacity: 1;
-
 }
 
 /*a*/
@@ -327,6 +328,7 @@ body{
 /*p*/
 .name{
     font-size: 14px;
+    font-family: 'Montserrat';
     color: #333333;
     text-transform: uppercase;
     font-weight: bold;
@@ -340,7 +342,7 @@ body{
     margin-bottom: 86px;
 }
 
-/*footer*/
+/*FOOTER*/
 .page_footer {
     display: flex;
     justify-content: space-between;
@@ -350,6 +352,7 @@ body{
 
 .footer_text{
     margin: auto 0;
+    font-family: 'Montserrat';
 }
 
 span{
@@ -367,11 +370,12 @@ span{
 
 .input_text{
     width: 229px;
-    height: 40px;
+    height: 44px;
     font-size: 14px;
     color: #555252;
-    font-style: italic;
-    
+    font-style: italic; 
+    border-bottom: 1px solid #e5e5e5;
+    border-right: none;
 }
 
 .footer_button{
@@ -383,9 +387,8 @@ span{
     background-color: #95e1d3;
     cursor: pointer;
     border: none;
-    padding: 16px 32px;
+    padding: 12px 32px;
 }
-
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #555252;
