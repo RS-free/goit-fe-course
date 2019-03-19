@@ -15,12 +15,17 @@ html{
     width: 100%;
 }
 /*HEADER*/
+.wrapper_slider{
+    height: 540px;
+    background-position: center;
+    background-size: cover;
+}
 .navigation{
     max-width: 320px;
     width: 100%;
     vertical-align: bottom;
 }
-
+/*ul*/
 .site_navigarion{
     display: flex;
     justify-content: space-evenly;
@@ -46,4 +51,21 @@ html{
 
 .button:hover{
 
+}
+/*SECTION_1*/
+.partners{
+
+}
+/*h2*/
+.section_name{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: ;
+}
+
+/*ul*/
+.partners_list{
+    list-style: none;
 }
