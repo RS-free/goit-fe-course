@@ -19,6 +19,7 @@ html{
     height: 540px;
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(255, 208, 0, 0.288)), url(../img/Header.jpg);
 }
 .navigation{
     max-width: 320px;
@@ -43,29 +44,209 @@ html{
 
 .button{
     display: flex;
-    margin: 0;
-    border: 3px solid #ffffff opacity 0;
-    color: transparent;
+    width: 86px;
+    margin: 13px auto;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    border: 3px solid transparent;
     border-radius: 15px;
+    background-color: transparent;
 }
 
 .button:hover{
-
+    border: 3px solid #ffffff;
 }
-/*SECTION_1*/
-.partners{
 
+.urlaubsglück{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
 }
 /*h2*/
-.section_name{
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: bold;
+.main_item{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
     font-size: 30px;
-    font-family: ;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*p*/
+.context{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+/*красная и белая кнопки partners*/
+.partner_button{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 260px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    border:2px solid #ff4e50;
+    border-radius: 40px;
+    margin: 18px auto;
+}
+
+.red{
+    color: #ffffff;
+    background-color: #ff4e50;
+}
+
+.white{
+    color: #ff4e50;
+    background-color: #ffffff;
+}
+
+/*SECTION_1*/
+/*h2*/
+.section_name{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /*ul*/
 .partners_list{
     list-style: none;
+}
+/*li*/
+.partner_item{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+/*div весь профиль*/
+.partner_link{
+
+}
+/*div с фото и статусом*/
+.box{
+    position: relative;
+    display: block;
+}
+.Bradley_photo{
+    background-image: url(../img/partner_1.jpg);
+    display: block;
+    max-width: 123px;
+    height: 121px;
+    border: none;
+}
+
+.Bradley_status{
+    background-image: url(../img/partner_1_icon.png);
+    width: 33px;
+    height: 33px;
+    background-color: ;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #ffffff;
+    z-index: 1;
+}
+
+.Lucas_photo{
+    background-image: url(../img/partner_2.jpg);
+    display: block;
+    max-width: 123px;
+    height: 121px;
+    border: none;
+}
+
+.Lucas_status{
+    background-image: url(../img/partner_2_icon.png);
+    width: 33px;
+    height: 33px;
+    background-color: ;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #ffffff;
+    z-index: 1;
+}
+.Heather_photo{
+    background-image: url(../img/partner_3.jpg);
+    display: block;
+    max-width: 123px;
+    height: 121px;
+    border: none;
+}
+
+.Heather_status{
+    background-image: url(../img/partner_3_icon.png);
+    width: 33px;
+    height: 33px;
+    background-color: ;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #ffffff;
+    z-index: 1;
+}
+.Hunter_photo{
+    background-image: url(../img/partner_4.jpg);
+    display: block;
+    max-width: 123px;
+    height: 121px;
+    border: none;
+}
+
+.Hunter_status{
+    background-image: url(../img/partner_4_icon.png);
+    width: 33px;
+    height: 33px;
+    background-color: ;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #ffffff;
+    z-index: 1;
+}
+/*div с именем и описанием*/
+.info{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+/*h3*/
+.partner_name{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*p*/
+.partner_about{
+    display: block;
+    font-size: 14px;
 }
