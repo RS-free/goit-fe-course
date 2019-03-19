@@ -147,7 +147,7 @@ html{
 .Bradley_photo{
     background-image: url(../img/partner_1.jpg);
     display: block;
-    max-width: 123px;
+    width: 123px;
     height: 121px;
     border: none;
 }
@@ -156,21 +156,19 @@ html{
     background-image: url(../img/partner_1_icon.png);
     width: 33px;
     height: 33px;
-    background-color: ;
     background-position: bottom right;
     background-repeat: no-repeat;
     padding: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    right: 75%;
     border: 2px solid #ffffff;
-    z-index: 1;
 }
 
 .Lucas_photo{
     background-image: url(../img/partner_2.jpg);
     display: block;
-    max-width: 123px;
+    width: 123px;
     height: 121px;
     border: none;
 }
@@ -179,7 +177,6 @@ html{
     background-image: url(../img/partner_2_icon.png);
     width: 33px;
     height: 33px;
-    background-color: ;
     background-position: bottom right;
     background-repeat: no-repeat;
     padding: 0;
@@ -201,7 +198,6 @@ html{
     background-image: url(../img/partner_3_icon.png);
     width: 33px;
     height: 33px;
-    background-color: ;
     background-position: bottom right;
     background-repeat: no-repeat;
     padding: 0;
@@ -209,7 +205,6 @@ html{
     top: 50%;
     left: 50%;
     border: 2px solid #ffffff;
-    z-index: 1;
 }
 .Hunter_photo{
     background-image: url(../img/partner_4.jpg);
@@ -223,7 +218,6 @@ html{
     background-image: url(../img/partner_4_icon.png);
     width: 33px;
     height: 33px;
-    background-color: ;
     background-position: bottom right;
     background-repeat: no-repeat;
     padding: 0;
@@ -231,7 +225,6 @@ html{
     top: 50%;
     left: 50%;
     border: 2px solid #ffffff;
-    z-index: 1;
 }
 /*div с именем и описанием*/
 .info{
