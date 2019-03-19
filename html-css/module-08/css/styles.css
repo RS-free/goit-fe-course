@@ -15,10 +15,35 @@ html{
     width: 100%;
 }
 /*HEADER*/
-.header {
+.navigation{
+    max-width: 320px;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.site_navigarion{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: row wrap;
-    margin-top: 50px;
+    align-items: center;
+    list-style: none;
+}
+
+.header_buttons{
+    color: #ffffff;
     font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button{
+    display: flex;
+    margin: 0;
+    border: 3px solid #ffffff opacity 0;
+    color: transparent;
+    border-radius: 15px;
+}
+
+.button:hover{
+
 }
