@@ -119,14 +119,14 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: auto 10px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 /*p*/
 .context{
     font-size: 30px;
     color: #ffffff;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 /*красная и белая кнопки partners*/
 .partner_button{
@@ -171,7 +171,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     padding-top: 74px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /*ul*/
@@ -197,7 +197,7 @@ body {
     position: relative;
 }
 
-.image{
+.profile_photo{
     display: block;
     width: 123px;
     height: 121px;
@@ -206,7 +206,9 @@ body {
     border-radius: 100%;
 }
 
-.icon{
+.box::after{
+    display: table;
+    content: "";
     width: 33px;
     height: 33px;
     background-position: center;
@@ -220,36 +222,22 @@ body {
     border-radius: 100%;
 }
 
-.Bradley_p{
-    background-image: url('../img/partner_1.jpg');
-}
-
-.Bradley_i{
+.first::after{
     background-image: url('../img/partner_1_icon.png');
     background-color: #ff4e50;
 }
 
-.Lucas_p{
-    background-image: url('../img/partner_2.jpg')
-    }
-
-.Lucas_i{
+.second::after{
     background-image: url('../img/partner_2_icon.png');
     background-color: #ffa507;
 }
-.Heather_p{
-    background-image: url('../img/partner_3.jpg');
-}
 
-.Heather_i{
+.third::after{
     background-image: url('../img/partner_3_icon.png');
     background-color: #1cd7ad;
 }
-.Hunter_p{
-    background-image: url('../img/partner_4.jpg');
-}
 
-.Hunter_i{
+.last::after{
     background-image: url('../img/partner_4_icon.png');
     background-color: #4e73db;
 }
@@ -265,7 +253,7 @@ body {
     font-size: 20px;
     font-family: 'Montserrat';
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 /*p*/
 .partner_about{
@@ -288,7 +276,7 @@ body {
         flex-flow: row-reverse wrap;
         align-items: center;
         padding: 0 40px;
-        padding-bottom: 160px;
+        margin-bottom: 160px;
     }
     .urlaubsglück{
         padding-top: 0;
