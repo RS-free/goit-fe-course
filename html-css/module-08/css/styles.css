@@ -44,6 +44,7 @@ html{
 
 .button{
     display: flex;
+    justify-content: center;
     width: 86px;
     margin: 13px auto;
     font-family: 'Montserrat';
@@ -93,7 +94,6 @@ html{
 .partner_button{
     display: flex;
     justify-content: center;
-    flex-flow: column wrap;
     width: 260px;
     font-family: 'Montserrat';
     font-weight: bold;
@@ -150,6 +150,7 @@ html{
     width: 123px;
     height: 121px;
     border: none;
+    margin: 0;
 }
 
 .Bradley_status{
@@ -163,6 +164,7 @@ html{
     top: 75%;
     right: 75%;
     border: 2px solid #ffffff;
+    z-index: 1;
 }
 
 .Lucas_photo{
