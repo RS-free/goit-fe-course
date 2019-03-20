@@ -128,12 +128,14 @@ html{
 /*ul*/
 .partners_list{
     list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 /*li*/
 .partner_item{
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
+    text-align: center;
+    max-width: 221px;
 }
 /*div весь профиль*/
 .partner_link{
@@ -141,92 +143,66 @@ html{
 }
 /*div с фото и статусом*/
 .box{
+    display: inline-block;
     position: relative;
-    display: block;
+    
 }
-.Bradley_photo{
-    background-image: url(../img/partner_1.jpg);
+
+.image{
     display: block;
     width: 123px;
     height: 121px;
     border: none;
     margin: 0;
+    border-radius: 100%;
 }
 
-.Bradley_status{
-    background-image: url(../img/partner_1_icon.png);
+.icon{
     width: 33px;
     height: 33px;
-    background-position: bottom right;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 0;
     position: absolute;
-    top: 75%;
-    right: 75%;
+    bottom: 0;
+    right:0;
     border: 2px solid #ffffff;
     z-index: 1;
+    border-radius: 100%;
 }
 
-.Lucas_photo{
-    background-image: url(../img/partner_2.jpg);
-    display: block;
-    width: 123px;
-    height: 121px;
-    border: none;
+.Bradley_p{
+    background-image: url('../img/partner_1.jpg');
 }
 
-.Lucas_status{
-    background-image: url(../img/partner_2_icon.png);
-    width: 33px;
-    height: 33px;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 2px solid #ffffff;
-    z-index: 1;
-}
-.Heather_photo{
-    background-image: url(../img/partner_3.jpg);
-    display: block;
-    max-width: 123px;
-    height: 121px;
-    border: none;
+.Bradley_i{
+    background-image: url('../img/partner_1_icon.png');
+    background-color: #ff4e50;
 }
 
-.Heather_status{
-    background-image: url(../img/partner_3_icon.png);
-    width: 33px;
-    height: 33px;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 2px solid #ffffff;
+.Lucas_p{
+    background-image: url('../img/partner_2.jpg')
+    }
+
+.Lucas_i{
+    background-image: url('../img/partner_2_icon.png');
+    background-color: #ffa507;
 }
-.Hunter_photo{
-    background-image: url(../img/partner_4.jpg);
-    display: block;
-    max-width: 123px;
-    height: 121px;
-    border: none;
+.Heather_p{
+    background-image: url('../img/partner_3.jpg');
 }
 
-.Hunter_status{
-    background-image: url(../img/partner_4_icon.png);
-    width: 33px;
-    height: 33px;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 2px solid #ffffff;
+.Heather_i{
+    background-image: url('../img/partner_3_icon.png');
+    background-color: #1cd7ad;
+}
+.Hunter_p{
+    background-image: url('../img/partner_4.jpg');
+}
+
+.Hunter_i{
+    background-image: url('../img/partner_4_icon.png');
+    background-color: #4e73db;
 }
 /*div с именем и описанием*/
 .info{
