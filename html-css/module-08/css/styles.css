@@ -170,6 +170,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 74px;
     padding-bottom: 20px;
 }
 
@@ -194,7 +195,6 @@ body {
 .box{
     display: inline-block;
     position: relative;
-    
 }
 
 .image{
@@ -294,9 +294,40 @@ body {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .section_name{
+        padding-top: 76px;
+    }
+
     .partner_button{
         width: 226px;
         padding: 16px;
     }
 
+    .partner_item:nth-of-type(1) {
+        order: 1;
+    }
+     
+    .partner_item:nth-of-type(3) {
+        order: 2;
+    }
+
+    .partner_item:nth-of-type(2) {
+        order: 3;
+    }
+
+    .partner_item:nth-of-type(4) {
+        order: 4;
+    }
+
 }
+/*МЕДИАЗАПРОС DESKTOP*/
+@media screen and (min-width: 942px) {
+    .partners_list {
+        max-width: 942px;
+    }
+
+    .navigation{
+        padding: 0;
+        padding-bottom: 160px;
+    }
