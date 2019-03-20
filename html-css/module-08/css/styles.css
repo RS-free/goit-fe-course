@@ -9,11 +9,54 @@ html{
     margin: 0;
     }
 
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container{
     max-width: 320px;
     margin: 0 auto;
     width: 100%;
 }
+
+@font-face{
+    font-family:"Roboto";
+    src: url("../fonts/Roboto/roboto-v18-latin-regular.woff2") format("woff2"),
+        url("../fonts/Roboto/roboto-v18-latin-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Roboto";
+    src: url("../fonts/Roboto/roboto-v18-latin-300.woff2") format("woff2"),
+        url("../fonts/Roboto/roboto-v18-latin-300.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Montserrat";
+    src: url("../fonts/Roboto/roboto-v18-latin-300.woff2") format("woff2"),
+        url("../fonts/Roboto/roboto-v18-latin-300.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Montserrat";
+    src: url("../fonts/Montserrat/montserrat-v12-latin-700.woff2") format("woff2"),
+        url("../fonts/Montserrat/montserrat-v12-latin-700.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
 /*HEADER*/
 .wrapper_slider{
     height: 540px;
@@ -27,22 +70,15 @@ html{
     vertical-align: bottom;
 }
 /*ul*/
-.site_navigarion{
+.site_navigation{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-flow: row wrap;
     align-items: center;
     list-style: none;
 }
 
-.header_buttons{
-    color: #ffffff;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.button{
+.nav{
     display: flex;
     justify-content: center;
     width: 86px;
@@ -54,41 +90,40 @@ html{
     border: 3px solid transparent;
     border-radius: 15px;
     background-color: transparent;
+    text-decoration: none;
 }
 
-.button:hover{
+.nav:hover{
     border: 3px solid #ffffff;
 }
 
 .urlaubsglück{
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    text-transform: uppercase;
-    font-weight: bold;
+    display: block;
     font-size: 20px;
+    font-family: 'Montserrat';
     color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
+    padding-top: 120px;
+    padding-bottom: 36px;
+    margin: auto 10px;
 }
 /*h2*/
 .main_item{
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
     font-size: 30px;
-    font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
+    margin: auto 10px;
+    padding-bottom: 20px;
 }
 /*p*/
 .context{
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
     font-size: 30px;
     color: #ffffff;
     text-align: center;
+    padding-bottom: 20px;
 }
 /*красная и белая кнопки partners*/
 .partner_button{
@@ -101,6 +136,7 @@ html{
     border:2px solid #ff4e50;
     border-radius: 40px;
     margin: 18px auto;
+    text-decoration: none;
 }
 
 .red{
@@ -113,6 +149,13 @@ html{
     background-color: #ffffff;
 }
 
+
+.white:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+    outline: none;
+}
+
 /*SECTION_1*/
 /*h2*/
 .section_name{
@@ -120,9 +163,11 @@ html{
     justify-content: center;
     flex-flow: column wrap;
     font-size: 30px;
+    font-family: 'Montserrat';
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 /*ul*/
@@ -214,10 +259,13 @@ html{
 .partner_name{
     display: block;
     font-size: 20px;
+    font-family: 'Montserrat';
     font-weight: bold;
+    padding-bottom: 20px;
 }
 /*p*/
 .partner_about{
     display: block;
     font-size: 14px;
+    padding-bottom: 30px;
 }
