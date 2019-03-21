@@ -13,7 +13,7 @@ html{
 button:focus,
 a:hover {
     outline: none;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -52,13 +52,12 @@ body {
     font-weight: 700;
     font-style: normal;
 }
-
 /*HEADER*/
 .wrapper_slider{
+    height: 540px;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(0,0,0,.3), rgba(255, 208, 0, 0.288)), url(../img/Header.jpg);
-    height: 560px;
 }
 .navigation{
     width: 100%;
@@ -91,6 +90,7 @@ body {
     border: 3px solid transparent;
     border-radius: 15px;
     background-color: transparent;
+    text-decoration: none;
 }
 
 .nav:hover{
@@ -103,6 +103,7 @@ body {
     display: block;
     font-size: 20px;
     font-family: 'Montserrat';
+    color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -116,25 +117,28 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
+    margin: auto 10px;
+    margin-bottom: 20px;
 }
 /*p*/
 .context{
     font-size: 30px;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 20px;
 }
-/*красная и белая кнопки partners*/
+/*a & button¸ partners*/
 .partner_button{
     display: flex;
     justify-content: center;
+    width: 260px;
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 14px;
     border:2px solid #ff4e50;
     border-radius: 40px;
-    margin: 0 auto;
-    padding: 5px 15px;
-
+    margin: 18px auto;
+    text-decoration: none;
 }
 
 .red{
@@ -148,6 +152,7 @@ body {
     background-color: #ffffff;
 }
 
+
 .white:active {
     transform: translateY(1px);
     filter: saturate(150%);
@@ -155,11 +160,11 @@ body {
 }
 
 /*SECTION_1*/
-/*h2*/
 .partners{
-    padding-top: 74px;/*к секции*/
+    padding-top: 74px;
     padding-bottom: 60px;
 }
+/*h2*/
 .section_name{
     display: flex;
     justify-content: center;
@@ -169,6 +174,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 74px;
     margin-bottom: 20px;
 }
 
@@ -182,14 +188,15 @@ body {
 /*li*/
 .partner_item{
     text-align: center;
+    max-width: 221px;
     margin-bottom: 30px;
     height: 280px;
 }
-/*div весь профиль*/
+/*div Ð²ÐµÑÑŒ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»ÑŒ*/
 .partner_link{
 
 }
-/*div с фото и статусом*/
+/*div Ñ Ñ„Ð¾Ñ‚Ð¾ Ð¸ ÑÑ‚Ð°Ñ‚ÑƒÑÐ¾Ð¼*/
 .box{
     display: inline-block;
     position: relative;
@@ -259,6 +266,7 @@ body {
     font-size: 14px;
 }
 
+
 /*МЕДИАЗАПРОС TABLET*/
 @media screen and (min-width: 768px) {
     .partners_list {
@@ -267,14 +275,6 @@ body {
         max-width: 490px;
         margin: 0 auto;
     }
-
-    .header .row{
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row-reverse;
-        align-items: center;
-    }
-
     .navigation{
         display: flex;
         justify-content: space-between;
@@ -289,6 +289,10 @@ body {
         padding-bottom: 0;
     }
 
+    .main_item{
+        margin-top: 144px;
+    }
+
     .section_name{
         padding-top: 76px;
     }
@@ -296,7 +300,6 @@ body {
     .partner_button{
         width: 226px;
         padding: 16px;
-        
     }
 
     .partner_item:nth-of-type(1) {
@@ -324,6 +327,5 @@ body {
 
     .navigation{
         padding: 0;
-        padding-bottom: 160px;
     }
 }
