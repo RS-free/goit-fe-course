@@ -1,0 +1,321 @@
+html{
+    box-sizing: border-box;
+    }
+    *,
+    *::before,
+    *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+@font-face{
+    font-family:"Roboto";
+    src: url("../fonts/Roboto/roboto-v18-latin-regular.woff2") format("woff2"),
+        url("../fonts/Roboto/roboto-v18-latin-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Roboto";
+    src: url("../fonts/Roboto/roboto-v18-latin-300.woff2") format("woff2"),
+        url("../fonts/Roboto/roboto-v18-latin-300.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Montserrat";
+    src: url("../fonts/Montserrat/montserrat-v12-latin-regular.woff2") format("woff2"),
+        url("../fonts/Montserrat/montserrat-v12-latin-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Montserrat";
+    src: url("../fonts/Montserrat/montserrat-v12-latin-700.woff2") format("woff2"),
+        url("../fonts/Montserrat/montserrat-v12-latin-700.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/*HEADER*/
+.wrapper_slider{
+    height: 540px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(255, 208, 0, 0.288)), url(../img/Header.jpg);
+}
+.navigation{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.slider_content {
+    padding: 0 15px;
+}
+
+/*ul*/
+.site_navigation{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    width: 86px;
+    margin: 13px auto;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav:hover{
+    border: 3px solid #ffffff;
+}
+
+.urlaubsglück{
+    display: block;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 36px;
+    margin: 0;
+}
+/*h2*/
+.main_item{
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto 10px;
+    margin-bottom: 20px;
+}
+/*p*/
+.context{
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*красная и белая кнопки partners*/
+.partner_button{
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    border:2px solid #ff4e50;
+    border-radius: 40px;
+    margin: 18px auto;
+    text-decoration: none;
+}
+
+.red{
+    color: #ffffff;
+    background-color: #ff4e50;
+}
+
+.white{
+    color: #ff4e50;
+    background-color: #ffffff;
+}
+
+
+.white:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+    outline: none;
+}
+
+/*SECTION_1*/
+/*h2*/
+.section_name{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 74px;
+    margin-bottom: 20px;
+}
+
+/*ul*/
+.partners_list{
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+/*li*/
+.partner_item{
+    text-align: center;
+    max-width: 221px;
+    margin-bottom: 30px;
+}
+/*div весь профиль*/
+.partner_link{
+
+}
+/*div с фото и статусом*/
+.box{
+    display: inline-block;
+    position: relative;
+}
+
+.profile_photo{
+    display: block;
+    width: 123px;
+    height: 121px;
+    border: none;
+    margin: 0;
+    border-radius: 100%;
+}
+
+.box::after{
+    display: table;
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    border: 2px solid #ffffff;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.first::after{
+    background-image: url('../img/partner_1_icon.png');
+    background-color: #ff4e50;
+}
+
+.second::after{
+    background-image: url('../img/partner_2_icon.png');
+    background-color: #ffa507;
+}
+
+.third::after{
+    background-image: url('../img/partner_3_icon.png');
+    background-color: #1cd7ad;
+}
+
+.last::after{
+    background-image: url('../img/partner_4_icon.png');
+    background-color: #4e73db;
+}
+/*div с именем и описанием*/
+.info{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+/*h3*/
+.partner_name{
+    display: block;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin: 20px;
+}
+/*p*/
+.partner_about{
+    display: block;
+    font-size: 14px;
+}
+
+
+/*МЕДИАЗАПРОС TABLET*/
+@media screen and (min-width: 768px) {
+    .partners_list {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        max-width: 490px;
+        margin: 0 auto;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row-reverse wrap;
+        align-items: center;
+        padding: 0 40px;
+        margin-bottom: 160px;
+    }
+    .urlaubsglück{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .section_name{
+        padding-top: 76px;
+    }
+
+    .partner_button{
+        width: 226px;
+        padding: 16px;
+    }
+
+    .partner_item:nth-of-type(1) {
+        order: 1;
+    }
+     
+    .partner_item:nth-of-type(3) {
+        order: 2;
+    }
+
+    .partner_item:nth-of-type(2) {
+        order: 3;
+    }
+
+    .partner_item:nth-of-type(4) {
+        order: 4;
+    }
+
+}
+/*МЕДИАЗАПРОС DESKTOP*/
+@media screen and (min-width: 942px) {
+    .partners_list {
+        max-width: 942px;
+    }
+
+    .navigation{
+        padding: 0;
+        padding-bottom: 160px;
+    }
