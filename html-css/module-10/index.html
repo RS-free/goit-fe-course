@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="background">
-        <header class="header container">
+    <header class="background">
+        <div class="header container">
             <a href="#" class="logo">MoGo</a>
             <nav class="navigation">
                 <ul class="site_navigation">
@@ -50,13 +50,13 @@
                     </li>
                 </ul>
             </nav>
-        </header>
+        </div>
         <div class="greeting container">
             <p class="greeting_about">Creative Template</p>
             <h2 class="greeting_name">welcome to mogo</h2>
             <a class="button_more" href="#services">learn more</a>
         </div>
-    </div>    
+    </header>    
     <main class="main-content container">
         <section class="services">
             <div class="title_wrapper">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="services_topic_item">
+                <li class="services_topic_item col-lg-4">
                     <div class="services_topic_point">
                         <svg class="svg">
                             <use href="./icons/sprite.svg#ascendant-bars-graphic"></use>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="services_topic_item">
+                <li class="services_topic_item col-lg-4">
                     <div class="services_topic_point">
                         <svg class="svg">
                             <use href="./icons/sprite.svg#monitor"></use>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="services_topic_item">
+                <li class="services_topic_item col-lg-4">
                     <div class="services_topic_point">
                         <svg class="svg">
                             <use href="./icons/sprite.svg#open-book"></use>
@@ -144,12 +144,31 @@
                 <ul class="team_list">
                     <li class="team_list_item">
                         <div class="employee">
-                            <img class="employee_image" src="img/1.jpg" alt="matthew dix" width="380" height="472">
+                            <picture class="employee_image">
+                                <source srcset="./img/1x2.jpg, ../../1.jpg 2x" alt="matthew dix">
+                                <img srcset="./img/1x2.jpg" alt="default image">
+                            </picture>
                             <div class="profile_links">
-                                <a class="facebook" href="#"></a>
-                                <a class="twitter" href="#"></a>
-                                <a class="pinterest" href="#"></a>
-                                <a class="instagram" href="#"></a>
+                                <div class="link_box facebook">   
+                                    <svg class="link">
+                                        <use href="./icons/sprite.svg#facebook"></use>
+                                    </svg>
+                                </div> 
+                                <div class="link_box twitter">   
+                                <svg class="link">
+                                    <use href="./icons/sprite.svg#twitter"></use>
+                                </svg>
+                                </div>
+                                <div class="link_box pinterest">
+                                <svg class="link">
+                                    <use href="./icons/sprite.svg#pinterest"></use>
+                                </svg>
+                                </div>
+                                <div class="link_box instagram">
+                                    <svg class="link">
+                                        <use href="./icons/sprite.svg#instagram"></use>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                         <div class="employee_topic">

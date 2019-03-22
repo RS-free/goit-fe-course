@@ -60,7 +60,7 @@ body{
 }
 
 /*HEADER*/
-/*div*/
+/*header*/
 .background{
     height: 1000px;
     background-image:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% ), url(../img/eagle.png);
@@ -69,7 +69,7 @@ body{
     margin: 0;
     padding: 0;
 }
-/*header*/
+/*div*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -256,7 +256,7 @@ body{
     border-color: #f38181;
     background-color: #f38181;
 }
-/*SECTION_1*/
+/*SERVICES*/
 .services{
     margin-top: 106px;
 }
@@ -266,25 +266,28 @@ body{
     justify-content: space-between;
     flex-flow: row wrap;
     height: 250px;
+    padding: 0 10px;
 }
 /*li*/
 .services_topic_item{
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
+    width: 383px;
 }
-/*div header*/
+/*div*/
 .services_topic_point{
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: initial;
 }
 /*svg*/
 .svg{
     vertical-align: middle;
     margin: 0 30px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    fill: #95e1d3;
 }
 /*div*/
 .services_topic{
@@ -303,7 +306,7 @@ body{
 .services_content{
     color: #b6b6b6;
 }
-/*SECTION_2*/
+/*TEAM*/
 .team{
     padding:100px 0;
     border-bottom: 1px solid #e5e5e5;
@@ -374,83 +377,57 @@ body{
 .team_list_item:focus .profile_links{
     opacity: 1;
 }
-
-/*a*/
-.facebook{
-    background-image: url('../img/facebook_1.png');
+.link_box{
     width: 55px;
     height: 55px;
     background-color: #fce38a;
+    border:none;
     background-position: center;
-    background-repeat: no-repeat;
     padding: 0;
+    z-index: 0;
+}
+
+.link_box:hover{
+    background-color: #f38181;
+}
+.link{
+    width: 21px;
+    height: 21px;
+    fill: #f38181;
+    margin: 17px;
+    background-position: center;
+    background-color: inherit;
+    z-index: 1;
+}
+
+.link:hover{
+    fill: #ffffff;
+    background-color: inherit;
+}
+    /*a*/
+
+.facebook{
     position: absolute;
     top: 45%;
     left: 20%;
 }
 
-.facebook:hover{
-    background-color: #95e1d3;
-    border: none;
-    width: 55px;
-    height: 55px;
-}
-
 .twitter{
-    background-image: url('../img/twitter_2.png');
-    width: 55px;
-    height: 55px;
-    background-color: #fce38a;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
     position: absolute;
     top: 45%;
     left: 35%;
 }
 
-.twitter:hover{
-    background-color: #95e1d3;
-    width: 55px;
-    height: 55px;
-}
-
 .pinterest{
-    background-image: url('../img/pinterest_3.png');
-    width: 55px;
-    height: 55px;
-    background-color: #fce38a;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
     position: absolute;
     top: 45%;
     left: 50%;
 }
 
-.pinterest:hover{
-    background-color: #95e1d3;
-    width: 55px;
-    height: 55px;
-}
-
 .instagram{
-    background-image: url('../img/instagram_4.png');
-    width: 55px;
-    height: 55px;
-    background-color: #fce38a;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
     position: absolute;
     top: 45%;
     left: 65%;
-}
-
-.instagram:hover{
-    background-color: #95e1d3;
-    width: 55px;
-    height: 55px;
 }
 /*div*/
 .employee_topic{
@@ -531,3 +508,9 @@ span{
     font-size: 14px;
     font-style: italic;
   }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .wrapper {
+        background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url(../img/eaglex2.jpg);
+    }
+}
