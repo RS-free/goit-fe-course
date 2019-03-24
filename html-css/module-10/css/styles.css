@@ -220,7 +220,6 @@ body{
     -webkit-box-direction:normal;
         -ms-flex-flow:column wrap;
             flex-flow:column wrap;
-    height: 924px;
 }
 /*p*/
 .greeting__about{
@@ -264,7 +263,7 @@ body{
 .section{
     padding-top: 106px;
 }
-.services__wrapper{
+.section__wrapper{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -276,6 +275,7 @@ body{
         -ms-flex-flow:column wrap;
             flex-flow:column wrap;
     color: #333333;
+    margin-bottom: 100px;
 }
 /*p*/
 .section__about{
@@ -429,6 +429,7 @@ body{
     display: flex;
     padding: 0;
     margin: 0;
+    list-style: none;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -466,6 +467,21 @@ body{
     -webkit-transition: .3s linear;
     -o-transition: .3s linear;
     transition: .3s linear;
+    width: 380px;
+    height: 470px;
+    z-index: 1;
+    background-image: -webkit-gradient (linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)) );
+    background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    opacity: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
 }
 
 .team__item:hover .employee {
@@ -496,30 +512,16 @@ body{
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    width: 380px;
-    height: 470px;
-    z-index: 1;
-    background-image: -webkit-gradient (linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)) );
-    background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
-    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
-    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
-    -webkit-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
-    opacity: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
+    
 }
 
-.team__item:hover .profile_links {
+.team__item:hover .employee {
     -webkit-box-shadow:10px 10px 0 #95e1d3;
             box-shadow:10px 10px 0 #95e1d3;
 }
 /*div с ссылками на соцсети*/
-.team__item:hover .profile_links,
-.team__item:focus .profile_links{
+.team__item:hover .employee,
+.team__item:focus .employee{
     opacity: 1;
 }
 .employee__link{
@@ -620,6 +622,7 @@ body{
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     text-align: center;
+    min-height: 60px;
 }
 
 .page_footer__text{
