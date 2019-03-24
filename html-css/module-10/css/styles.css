@@ -97,9 +97,9 @@ body{
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-top: 50px;
     font-family: 'Montserrat';  
-    padding-top: 36px; 
+    padding-top: 36px;
+    margin-bottom: 200px;
 }
 /*a*/
 .logo{
@@ -143,11 +143,11 @@ body{
     margin: 0;
 }
 /*li*/
-.site_navigation_item{
+.site_navigation__item{
     list-style: none;
 }
 /*li svg*/
-.site_navigation_item svg {
+.site_navigation__item svg {
     fill:#ffffff;
     width: 20px;
     height: 20px;
@@ -155,14 +155,14 @@ body{
     border: none;
 }
 /*li svg hover*/
-.site_navigation_item svg:hover,
-.site_navigation_item svg:focus{
+.site_navigation__item svg:hover,
+.site_navigation__item svg:focus{
     fill:#fce38a
 }
 
 /*a*/
-.site_navigation_link, 
-.site_navigation_button{  
+.site_navigation__link, 
+.site_navigation__button{  
     display: -webkit-box;  
     display: -ms-flexbox;  
     display: flex;
@@ -182,17 +182,17 @@ body{
     border: none;
 } 
 
-.site_navigation_link:hover,
-.site_navigation_link:focus {
+.site_navigation__link:hover,
+.site_navigation__link:focus {
     color:#fce38a;
 }
 
-.nav_link:hover,
-.nav_link:focus{
+.site_navigation__icon:hover,
+.site_navigation__icon:focus{
     color:#fce38a;
 }
 
-.site_navigation_link::after{
+.site_navigation__link::after{
     display: table;
     content:"";
     width:100%;
@@ -204,8 +204,8 @@ body{
     opacity: 0;
 }
 
-.site_navigation_link:hover::after,
-.site_navigation_link:focus::after{
+.site_navigation__link:hover::after,
+.site_navigation__link:focus::after{
     opacity: 1;
 }
 /*div*/
@@ -223,17 +223,17 @@ body{
     height: 924px;
 }
 /*p*/
-.greeting_about{
+.greeting__about{
     font-family: 'Kaushan Script';
     font-size: 72px;
     color: #ffffff;
     text-align: center;
     line-height: 44px;
     margin: 0;
-    margin-top: 200px;
+    margin-bottom: 200px;
 }
 /*h2*/
-.greeting_name{
+.greeting__name{
     display: block;
     font-family: 'Montserrat';
     font-size: 150px;
@@ -241,11 +241,11 @@ body{
     text-transform: uppercase;
     text-align: center;
     margin:0;
-    margin-top: 69px;
+    margin-bottom: 69px;
     line-height: 124px;
 }
 /*a*/
-.button_more{
+.greeting__more{
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -261,8 +261,10 @@ body{
 }
 
 /*both sections*/
-/*div*/
-.title_wrapper{
+.section{
+    padding-top: 106px;
+}
+.services__wrapper{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -276,7 +278,7 @@ body{
     color: #333333;
 }
 /*p*/
-.section_about{
+.section__about{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -293,7 +295,7 @@ body{
     line-height: 44px;
 }
 /*h2*/
-.section_name{
+.section__name{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -313,7 +315,7 @@ body{
     margin-bottom: 50px;
 }
 /*h2*/
-.section_name::after {
+.section__name::after {
     display: table;
     content:"";
     width:60px;
@@ -323,12 +325,10 @@ body{
     border-color: #f38181;
     background-color: #f38181;
 }
+
 /*SERVICES*/
-.services{
-    margin-top: 106px;
-}
 /*ul*/
-.services_topic_list{
+.services__topic_list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -343,7 +343,7 @@ body{
     padding: 0 10px;
 }
 /*li*/
-.services_topic_item{
+.services__topic_item{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -357,7 +357,7 @@ body{
     width: 383px;
 }
 /*div*/
-.services_topic_point{
+.services__topic_point{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -378,7 +378,7 @@ body{
     fill: #95e1d3;
 }
 /*div*/
-.services_topic{
+.services__topic_desk{
     max-width: 301px;
     width: 100%;
     vertical-align: bottom;
@@ -387,14 +387,16 @@ body{
             justify-content: flex-start;
 }
 /*p*/
-.services_topic_name{
+.services__topic_name{
     font-family: 'Montserrat';
     font-size: 14px;
     text-transform: uppercase;
+    margin: 0;
 }
 /*p*/
-.services_content{
+.services__content{
     color: #b6b6b6;
+    margin: 0;
 }
 /*TEAM*/
 .team{
@@ -402,7 +404,7 @@ body{
     border-bottom: 1px solid #e5e5e5;
 }
 /*p*/
-.team_description{
+.team__description{
     max-width:980px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -415,16 +417,18 @@ body{
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     text-align: center;
-    margin: 95px auto;
+    margin: 0 auto;
     font-size: 15px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #a8a8a8;
 }
 /*ul*/
-.team_list{
+.team__list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
+    margin: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -434,7 +438,7 @@ body{
             flex-flow: row wrap;
 }
 /*li*/
-.team_list_item{
+.team__item{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -464,13 +468,13 @@ body{
     transition: .3s linear;
 }
 
-.team_list_item:hover .employee {
+.team__item:hover .employee {
     -webkit-transform: translate(-10px, -10px);
         -ms-transform: translate(-10px, -10px);
             transform: translate(-10px, -10px);
 }
 /*img*/
-.employee_image{
+.employee__image{
     width: 380px;
     height: 470px;
     display: -webkit-box;
@@ -481,7 +485,7 @@ body{
             justify-content: space-between;
 }
 /*div с ссылками на соцсети*/
-.profile_links{
+.employee__links{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -509,16 +513,16 @@ body{
     position: absolute;
 }
 
-.team_list_item:hover .profile_links {
+.team__item:hover .profile_links {
     -webkit-box-shadow:10px 10px 0 #95e1d3;
             box-shadow:10px 10px 0 #95e1d3;
 }
 /*div с ссылками на соцсети*/
-.team_list_item:hover .profile_links,
-.team_list_item:focus .profile_links{
+.team__item:hover .profile_links,
+.team__item:focus .profile_links{
     opacity: 1;
 }
-.link_box{
+.employee__link{
     width: 55px;
     height: 55px;
     background-color: #fce38a;
@@ -528,10 +532,10 @@ body{
     z-index: 0;
 }
 
-.link_box:hover{
+.employee__link:hover{
     background-color: #f38181;
 }
-.link{
+.icon{
     width: 21px;
     height: 21px;
     fill: #f38181;
@@ -541,7 +545,7 @@ body{
     z-index: 1;
 }
 
-.link:hover{
+.icon:hover{
     fill: #ffffff;
     background-color: inherit;
 }
@@ -571,7 +575,7 @@ body{
     left: 65%;
 }
 /*div*/
-.employee_topic{
+.employee__topic{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -587,7 +591,7 @@ body{
     text-align: center;
 }
 /*p*/
-.name{
+.employee__name{
     font-size: 14px;
     font-family: 'Montserrat';
     color: #333333;
@@ -595,12 +599,12 @@ body{
     font-weight: bold;
 }
 /*p*/
-.profession{
+.employee__profession{
     font-style: italic;
     text-transform: capitalize;
     font-size: 15px;
     color: #a8a8a8;
-    margin-bottom: 86px;
+    margin: 0;
 }
 
 /*FOOTER*/
@@ -618,8 +622,8 @@ body{
     text-align: center;
 }
 
-.footer_text{
-    margin: auto 0;
+.page_footer__text{
+    margin: 0;
     font-family: 'Montserrat';
 }
 
@@ -629,6 +633,28 @@ span{
 }
 
 .input_button{
+    width: 151px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: #95e1d3;
+    cursor: pointer;
+    border: none;
+    padding: 12px 32px;
+}
+
+.input_button__text{
+    width: 229px;
+    height: 44px;
+    font-size: 14px;
+    color: #555252;
+    font-style: italic; 
+    border-bottom: 1px solid #e5e5e5;
+    border-right: none;
+}
+
+.input_button__subscribe{
     vertical-align: bottom;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -641,28 +667,6 @@ span{
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     margin: 12px 0;
-}
-
-.input_text{
-    width: 229px;
-    height: 44px;
-    font-size: 14px;
-    color: #555252;
-    font-style: italic; 
-    border-bottom: 1px solid #e5e5e5;
-    border-right: none;
-}
-
-.footer_button{
-    width: 151px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: aliceblue;
-    background-color: #95e1d3;
-    cursor: pointer;
-    border: none;
-    padding: 12px 32px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
