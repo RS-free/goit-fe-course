@@ -443,6 +443,7 @@ body{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -456,6 +457,7 @@ body{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -481,7 +483,6 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: absolute;
 }
 
 .team__item:hover .employee {
@@ -505,6 +506,7 @@ body{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -512,7 +514,7 @@ body{
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    
+    width: 223px;
 }
 
 .team__item:hover .employee {
@@ -537,6 +539,10 @@ body{
 .employee__link:hover{
     background-color: #f38181;
 }
+.employee__link:hover .icon{
+    fill: #ffffff;
+}
+
 .icon{
     width: 21px;
     height: 21px;
@@ -549,29 +555,28 @@ body{
 
 .icon:hover{
     fill: #ffffff;
-    background-color: inherit;
 }
     /*a*/
 
-.facebook{
+.employee__link--facebook{
     position: absolute;
     top: 45%;
     left: 20%;
 }
 
-.twitter{
+.employee__link--twitter{
     position: absolute;
     top: 45%;
     left: 35%;
 }
 
-.pinterest{
+.employee__link--pinterest{
     position: absolute;
     top: 45%;
     left: 50%;
 }
 
-.instagram{
+.employee__link--instagram{
     position: absolute;
     top: 45%;
     left: 65%;
