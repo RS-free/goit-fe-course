@@ -1,0 +1,41 @@
+/*палитра цветов*/
+
+/*набор шрифтов*/
+@font-face{
+    font-family:"Roboto";
+    src: url("../fonts/Roboto/roboto-v18-latin-regular.woff2") format("woff2"),
+        url("../fonts/Roboto/roboto-v18-latin-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Roboto";
+    src: url("../fonts/Roboto/roboto-v18-latin-300.woff2") format("woff2"),
+        url("../fonts/Roboto/roboto-v18-latin-300.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Montserrat";
+    src: url("../fonts/Montserrat/montserrat-v12-latin-regular.woff2") format("woff2"),
+        url("../fonts/Montserrat/montserrat-v12-latin-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Montserrat";
+    src: url("../fonts/Montserrat/montserrat-v12-latin-700.woff2") format("woff2"),
+        url("../fonts/Montserrat/montserrat-v12-latin-700.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"KaushanScript";
+    src: url("../fonts/KaushanScript-Regular.ttf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
