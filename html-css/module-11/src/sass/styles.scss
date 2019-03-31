@@ -2,7 +2,23 @@
    Import partials below
 */
 @import './normalize';
+
+@import '/src/sass/utils/variables.scss';
+@import '/src/sass/utils/mixins.scss';
+@import '/src/sass/utils/functions.scss';
+
+@import '/src/sass/base/reset.scss';
 @import '/src/sass/base/fonts.scss';
+@import '/src/sass/base/typography.scss';
+
+@import '/src/sass/layout/header.scss';
+@import '/src/sass/layout/main.scss';
+@import '/src/sass/layout/footer.scss';
+
+@import '/src/sass/components/logo.scss';
+@import '/src/sass/components/submenu.scss';
+@import '/src/sass/components/button.scss';
+@import '/src/sass/components/gallery.scss';
 
 html{
    -webkit-box-sizing: border-box;
