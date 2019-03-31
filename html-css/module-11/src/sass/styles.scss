@@ -34,10 +34,10 @@ body{
 /*header*/
 .background {
    height: 1000px;
-   background-image: -webkit-gradient (linear, left bottom, left top, from(rgba(252, 227, 138, 0.6)), to(rgba(243, 129, 129, 0.8)) ), url("/src/images/back1.jpg");
-   background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.6) 0%, rgba(243, 129, 129, 0.8) 100% ), url("/src/images/back1.jpg");
-   background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.6) 0%, rgba(243, 129, 129, 0.8) 100% ), url("/src/images/back1.jpg");
-   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.6) 0%, rgba(243, 129, 129, 0.8) 100% ), url("/src/images/back1.jpg");
+   background-image: -webkit-gradient (linear, left bottom, left top, from(rgba(252, 227, 138, 0.6)), to(rgba(243, 129, 129, 0.8)) ), url("../images/back1.jpg");
+   background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.6) 0%, rgba(243, 129, 129, 0.8) 100% ), url("../images/back1.jpg");
+   background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.6) 0%, rgba(243, 129, 129, 0.8) 100% ), url("../images/back1.jpg");
+   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.6) 0%, rgba(243, 129, 129, 0.8) 100% ), url("../images/back1.jpg");
    background-size: cover;
    background-position: center;
    margin: 0;
@@ -49,10 +49,10 @@ body{
    (-o-min-device-pixel-ratio:2/1),
    (min-resolution:192dpi){
        .background {
-           background-image: -webkit-gradient (linear, left bottom, left top, from(rgba(248, 211, 248, -0.6)), to(rgba(253, 109, 205, 0.9)) ), url("/src/images/back1.jpg");
-           background-image: -webkit-linear-gradient(bottom, rgba(248, 211, 248, -0.6) 0%, rgba(253, 109, 205, 0.9) 100% ), url("/src/images/back1.jpg");
-           background-image: -o-linear-gradient(bottom, rgba(248, 211, 248, -0.6) 0%, rgba(253, 109, 205, 0.9) 100% ), url("/src/images/back1.jpg");
-           background-image: linear-gradient(to top, rgba(248, 211, 248, -0.6) 0%, rgba(253, 109, 205, 0.9) 100% ), url("/src/images/back1.jpg");
+           background-image: -webkit-gradient (linear, left bottom, left top, from(rgba(248, 211, 248, -0.6)), to(rgba(253, 109, 205, 0.9)) ), url("../images/back2.jpg");
+           background-image: -webkit-linear-gradient(bottom, rgba(248, 211, 248, -0.6) 0%, rgba(253, 109, 205, 0.9) 100% ), url("../images/back2.jpg");
+           background-image: -o-linear-gradient(bottom, rgba(248, 211, 248, -0.6) 0%, rgba(253, 109, 205, 0.9) 100% ), url("../images/back2.jpg");
+           background-image: linear-gradient(to top, rgba(248, 211, 248, -0.6) 0%, rgba(253, 109, 205, 0.9) 100% ), url("../images/back2.jpg");
        }
    }
 
@@ -681,16 +681,17 @@ span{
    margin: 12px 0;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder { 
    color: #555252;
    font-size: 14px;
    font-style: italic;
  }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
-   .wrapper {
+   .background {
        background-image: -webkit-linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url('/src/images/back2.jpg');
-       background-image: -o-linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url('/src/images/back1.jpg');
+       background-image: -o-linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url('/src/images/back2.jpg');
        background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url('/src/images/back2.jpg');
    }
 }
