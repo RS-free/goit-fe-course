@@ -5,6 +5,10 @@
 
 @import './base/fonts.scss';
 
+@import './utils/variables.scss';
+
+@import './utils/mixins.scss';
+
 html{
    -webkit-box-sizing: border-box;
            box-sizing: border-box;
@@ -19,15 +23,15 @@ html{
 
 body{
    font-family: "Roboto", "Montserrat", "Kaushan Script", sans-serif;
-   color: #6c7279;
+   color: $grey;
    font-size: 14px;
-   line-height: 21px;
 }
 
 .container{
    max-width: 1201px;
    margin: 0 auto;
    width: 100%;
+   line-height: 1.5;
 }
 
 /*HEADER*/
@@ -78,15 +82,13 @@ body{
    display: block;
    font-size: 30px;
    font-weight: bold;
-   color: #ffffff;
+   color: $white;
    text-decoration: none;
    margin: 0;
    padding: 0;
-}
-
-.logo:hover,
-.logo:focus{
-   color: #fce38a;
+   &:hover {
+   color: $yellow;
+   }
 }
 
 /*nav*/
@@ -124,7 +126,7 @@ body{
 
 /*li svg*/
 .site_navigation__item svg {
-   fill: #ffffff;
+   fill: $white;
    width: 20px;
    height: 20px;
    background-color: transparent;
@@ -134,7 +136,7 @@ body{
 /*li svg hover*/
 .site_navigation__item svg:hover,
 .site_navigation__item svg:focus{
-   fill: #fce38a
+   fill: $yellow;
 }
 
 /*a*/
@@ -151,7 +153,7 @@ body{
        -ms-flex-flow: row wrap;
            flex-flow: row wrap;  
    font-size: 14px;
-   color: #ffffff;
+   color: $white;
    text-transform: uppercase;
    line-height: 36px;
    text-decoration: none;
@@ -161,12 +163,12 @@ body{
 
 .site_navigation__link:hover,
 .site_navigation__link:focus {
-   color: #fce38a;
+   color: $yellow;
 }
 
 .site_navigation__icon:hover,
 .site_navigation__icon:focus{
-   color: #fce38a;
+   color: $yellow;
 }
 
 .site_navigation__link::after{
@@ -176,8 +178,8 @@ body{
    height: 3px;
    line-height: 20px;
    border: solid 2px;
-   border-color: #fce38a;
-   background-color: #fce38a;
+   border-color: $yellow;
+   background-color: $yellow;
    opacity: 0;
 }
 
@@ -204,7 +206,7 @@ body{
 .greeting__about{
    font-family: 'Kaushan Script';
    font-size: 72px;
-   color: #ffffff;
+   color: $white;
    text-align: center;
    line-height: 44px;
    margin: 0;
@@ -216,7 +218,7 @@ body{
    display: block;
    font-family: 'Montserrat';
    font-size: 150px;
-   color: #ffffff;
+   color: $white;
    text-transform: uppercase;
    text-align: center;
    margin: 0;
@@ -233,8 +235,8 @@ body{
    font-family: "Montserrat";
    font-size: 14px;
    font-weight: bold;
-   color: #ffffff;
-   border: 4px solid #ffffff;
+   color: $white;
+   border: 4px solid $white;
    width: 160px;
    margin: 0 auto;
    margin-bottom: 230px;
@@ -292,7 +294,7 @@ body{
            flex-flow: column wrap;
    font-family: 'Montserrat';
    font-size: 30px;
-   color: #333333;
+   color: $dark;
    text-transform: uppercase;
    text-align: center;
    line-height: 50px;
@@ -307,8 +309,8 @@ body{
    height: 4px;
    margin: 0 auto;
    border: solid 2px;
-   border-color: #f38181;
-   background-color: #f38181;
+   border-color: $red;
+   background-color: $red;
 }
 
 /*SERVICES*/
@@ -379,6 +381,7 @@ body{
 /*p*/
 .services__topic_name{
    font-family: 'Montserrat';
+   font-weight: bold;
    font-size: 14px;
    text-transform: uppercase;
    margin: 0;
@@ -516,8 +519,8 @@ body{
 }
 
 .team__item:hover .employee {
-   -webkit-box-shadow: 10px 10px 0 #95e1d3;
-           box-shadow: 10px 10px 0 #95e1d3;
+   -webkit-box-shadow: 10px 10px 0 $aqua;
+           box-shadow: 10px 10px 0 $aqua;
 }
 
 /*div с ссылками на соцсети*/
@@ -529,34 +532,31 @@ body{
 .employee__link{
    width: 55px;
    height: 55px;
-   background-color: #fce38a;
+   background-color: $yellow;
    border: none;
    background-position: center;
    padding: 0;
    z-index: 0;
-}
-
-.employee__link:hover{
-   background-color: #f38181;
+   &:hover{
+   background-color: $red;
+   }
 }
 
 .employee__link:hover .icon{
-   fill: #ffffff;
+   fill: $white;
 }
 
 .icon{
-   width: 21px;
-   height: 21px;
-   fill: #f38181;
+   @include icon;
    margin: 17px;
    background-position: center;
    background-color: inherit;
    z-index: 1;
+   &:hover{
+   fill: $white;
+   }
 }
 
-.icon:hover{
-   fill: #ffffff;
-}
 
 /*a*/
 .employee__link--facebook{
@@ -604,7 +604,7 @@ body{
 .employee__name{
    font-size: 14px;
    font-family: 'Montserrat';
-   color: #333333;
+   color: $dark;
    text-transform: uppercase;
    font-weight: bold;
 }
@@ -650,7 +650,7 @@ span{
    font-weight: bold;
    text-transform: uppercase;
    color: aliceblue;
-   background-color: #95e1d3;
+   background-color: $aqua;
    cursor: pointer;
    border: none;
    padding: 12px 32px;

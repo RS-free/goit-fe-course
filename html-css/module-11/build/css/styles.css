@@ -426,13 +426,13 @@ body {
   font-family: "Roboto", "Montserrat", "Kaushan Script", sans-serif;
   color: #6c7279;
   font-size: 14px;
-  line-height: 21px;
 }
 
 .container {
   max-width: 1201px;
   margin: 0 auto;
   width: 100%;
+  line-height: 1.5;
 }
 
 /*HEADER*/
@@ -472,8 +472,7 @@ body {
   padding: 0;
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover {
   color: #fce38a;
 }
 
@@ -649,7 +648,7 @@ body {
   flex-flow: column wrap;
   font-family: 'Montserrat';
   font-size: 30px;
-  color: #333333;
+  color: #110808;
   text-transform: uppercase;
   text-align: center;
   line-height: 50px;
@@ -721,6 +720,7 @@ body {
 
 .services__topic_name {
   font-family: 'Montserrat';
+  font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
@@ -847,9 +847,9 @@ body {
 }
 
 .icon {
+  fill: #f38181;
   width: 21px;
   height: 21px;
-  fill: #f38181;
   margin: 17px;
   background-position: center;
   background-color: inherit;
@@ -902,7 +902,7 @@ body {
 .employee__name {
   font-size: 14px;
   font-family: 'Montserrat';
-  color: #333333;
+  color: #110808;
   text-transform: uppercase;
   font-weight: bold;
 }
