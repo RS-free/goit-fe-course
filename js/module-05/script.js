@@ -248,16 +248,11 @@
 
 
 // //========================== task 08 =====================
-
-// /*
-//   Напиши функцию getTotal(products, order), где 
+// /*Напиши функцию getTotal(products, order), где 
 //   products - объект со свойствами "имя продукта":"цена за единицу"
 //   order - объект со свойствами "имя продукта":"количество единиц".
-  
 //   Функция возвращает общую сумму стоимости всех продуктов заказа.
-  
-//   Используй метод reduce.
-// */
+//   Используй метод reduce.*/
 
 // const products = {
 //     bread: 10,
@@ -284,7 +279,11 @@
 //     bread: 2,
 //     cheese: 2
 //   };
-  
+const getTotal = (products, order) => {
+  const orderArr = Object.keys(order);
+  const summ = orderArr.reduce((acc, el)) => acc += order[el] * products[el], 0);
+  return summ;
+}
 //   // Вызовы функции для проверки
 //   console.log(getTotal(products, orderA)); // 140
 //   console.log(getTotal(products, orderB)); // 120
