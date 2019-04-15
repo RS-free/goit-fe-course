@@ -466,28 +466,29 @@
 //  */
 // const getUsersWit...
 
-let valueA = '5';
-let valueAsNumber = +valueA;
-let typeOfValueAsNumber = typeof valueAsNumber;
+// let valueA = '5';
+// let valueAsNumber = +valueA;
+// let typeOfValueAsNumber = typeof valueAsNumber;
 
-console.log( typeOfValueAsNumber ); // 'number'
-console.log( valueAsNumber ); // 5
+// console.log( typeOfValueAsNumber ); // 'number'
+// console.log( valueAsNumber ); // 5
 
-valueAsNumber = Number(valueA);
-typeOfValueAsNumber = typeof valueAsNumber;
+// valueAsNumber = Number(valueA);
+// typeOfValueAsNumber = typeof valueAsNumber;
 
-console.log( typeOfValueAsNumber ); // 'number'
-console.log( valueAsNumber ); // 5
+// console.log( typeOfValueAsNumber ); // 'number'
+// console.log( valueAsNumber ); // 5
 
-let valueB = 'random string';
-valueAsNumber = +valueB;
-typeOfValueAsNumber = typeof valueAsNumber;
+// let valueB = 'random string';
+// valueAsNumber = +valueB;
+// typeOfValueAsNumber = typeof valueAsNumber;
 
-console.log( typeOfValueAsNumber ); // 'number'
-console.log( valueAsNumber ); // NaN
+// console.log( typeOfValueAsNumber ); // 'number'
+// console.log( valueAsNumber ); // NaN
 
-valueAsNumber = Number(valueB);
-typeOfValueAsNumber = typeof valueAsNumber;
+// valueAsNumber = Number(valueB);
+// typeOfValueAsNumber = typeof valueAsNumber;
 
-console.log( typeOfValueAsNumber ); // 'number'
-console.log( valueAsNumber ); // NaN
+// console.log( typeOfValueAsNumber ); // 'number'
+// console.log( valueAsNumber ); // NaN
+
