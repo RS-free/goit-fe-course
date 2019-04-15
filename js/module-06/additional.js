@@ -15,10 +15,10 @@ class Account {
 constructor (login,email){
   this.login = login;
   this.email = email;
-}
-getInfo() {
+  }
+  getInfo() {
   console.log(`Login: ${this.login}, Email: ${this.email}`);
-}
+  }
 }
 
 const account = new Account('Mangozedog', 'mango@dog.woof');
@@ -81,7 +81,7 @@ class Car {
     this.running = running;
     this.distance = distance;
     this.price = price;
-   }
+  }
   // Добавь код для того чтобы завести автомобиль. Просто записывает в свойство running значание true
   turnOn() {
     this.running = true;
@@ -120,7 +120,10 @@ class Car {
     console.log(`maxSpeed: ${car.speed}, speed: ${car.speed}, running: ${car.running}, distance: ${car.distance}`);
   }
   get value(){
-    return car.value(`${this.price}`);
+    return this.price;
+  }
+  set value(val){
+    return this.price = val;
   }
 }
   
@@ -142,3 +145,4 @@ console.log(car.value); // 2000
 
 car.value = 4000;
 console.log(car.value); // 4000
+console.log(car);
