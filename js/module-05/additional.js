@@ -110,6 +110,8 @@
 //     { name: "Chelsey", age: 45, isActive: false }
 //   ];
 
+
+  
 //   // Вызовы функции для проверки
 //   console.log( getPropValues(guests, "name") ); // ['Mango', 'Poly', 'Ajax', 'Chelsey']
 //   console.log( getPropValues(guests, "age") ); // [20, 18, 30, 45]
@@ -279,9 +281,9 @@
 //   };
 const getTotal = (products, order) => {
   const orderArr = Object.keys(order);
-  const summ = orderArr.reduce((acc, el) => acc += order[el] * products[el], 0);
+  const summ = orderArr.reduce((acc, el)) => acc += order[el] * products[el], 0);
   return summ;
-};
+}
 //   // Вызовы функции для проверки
 //   console.log(getTotal(products, orderA)); // 140
 //   console.log(getTotal(products, orderB)); // 120
