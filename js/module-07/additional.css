@@ -1,0 +1,23 @@
+﻿.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.categories{
+    /* text-transform: uppercase;
+    font-weight: bold; */
+}
+
+/* .list:first-child{
+    color: red;
+}
+
+.list:last-child{
+    color: blue;
+} */
+.first {
+    color: red;
+}
+  
+.last {
+    color: blue;
+}
