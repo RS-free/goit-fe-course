@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="vieport" content="width=device-width" initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./additional.css">
+        <title>js_module-08_cw</title>
+    </head>
+
+    <body class="container">
+        <!-- 1 -->
+        <section class="sectionOne">
+            <button class="button_1">0</button>
+        </section>
+        
+        <!-- 2 -->
+        <section class="sectionTwo">
+            <div class="container">
+                <div class="expression">
+                    <input type="text" placeholder="0">
+                    <span>+</span>
+                    <input type="text" placeholder="0">
+                    <span>=</span>
+                    <span class="result_2">0</span>
+                </div>
+                          
+                <button data-action="add">Сложить</button>
+            </div>
+        </section>
+        
+        <!-- 3 -->
+        <section class="sectionThree">
+            <button class="btn_3" data-action="sub">-1</button>
+            <span class="value_3">0</span>
+            <button class="btn_3" data-action="add">+1</button>
+        </section>
+
+        <!-- 4 -->
+        <section class="sectionFour">
+            <form class="question-form">
+                <div class="options">
+                    <label>
+                        <input type="radio" name="option" value="html">
+                        HTML
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="css">
+                        CSS
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="js">
+                        JavaScript
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="php">
+                        PHP
+                    </label>
+                </div>
+                
+                <button class="btn_4" type="submit">Submit</button>
+            </form>
+              
+            <p class="result">Result: </p>
+        </section>
+
+        <!-- 5 -->
+        <section class="sectionFive">
+            <ul class="images_5">
+                <li>
+                    <img src="https://images.pexels.com/photos/2090704/pexels-photo-2090704.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+                    alt="girl with a horse">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/2119106/pexels-photo-2119106.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+                    alt="red car">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/2096697/pexels-photo-2096697.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+                    alt="city by the sky">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/1669072/pexels-photo-1669072.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+                alt="christmas tree">
+                </li>
+            </ul>
+        </section>    
+
+        <!-- 6 -->
+        <section class="sectionSix">
+            <ul class="list_6">
+                <li>
+                    <button data-action="delete">Delete</button>
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <button data-action="delete">Delete</button>
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <button data-action="delete">Delete</button>
+                    <span>JS</span>
+                </li>
+                <li>
+                    <button data-action="delete">Delete</button>
+                    <span>React</span>
+                </li>
+                <li>
+                    <button data-action="delete">Delete</button>
+                    <span>NodeJS</span>
+                </li>
+                <li>
+                    <button data-action="delete">Delete</button>
+                    <span>PHP</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 7 -->
+        <section class="sectionSeven">
+            <div class="input_7-list">
+                <input type="text" class="input_7" data-length="2" placeholder="2 символа">
+                <input type="text" class="input_7" data-length="4" placeholder="4 символа">
+                <input type="text" class="input_7" data-length="8" placeholder="8 символов">
+                <input type="text" class="input_7" data-length="16" placeholder="16 символов">
+            </div>
+        </section>
+
+        <!-- 8 -->
+        <section class="sectionEight">
+            <p class="message"></p>
+            <input class="input_8" type="text">
+            <p class="input_8-value">Current input value: </p>
+        </section>
+
+        <!-- 9 -->
+        <section class="sectionNine">
+            <button class="btn_9" data-action="open-modal">Open Modal</button>
+
+            <div class="modal modal-hidden js-modal-backdrop">
+                <div class="modal-content">
+                    <div class="close-btn" data-action="close-modal"></div>
+                    <h2 class="modal-title">Newsletter</h2>
+                    <p class="modal-text">Subscribe to the Bachas mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+                <form class="sub-form" action="#">
+                    <input class="sub-form-input" type="text" placeholder="Your Email Here">
+                    <button class="sub-form-btn">subscribe</button>
+                </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 -->
+        <section class="sectionTen">
+            <ul class="menu js-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link active">home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">about</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">contacts</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">team</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">career</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- script -->
+        <script src="./additional.js"></script>
+    </body>
+</html>
