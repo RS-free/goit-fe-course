@@ -164,37 +164,44 @@
 // Сделайте функцию inArray, которая определяет, есть в массиве элемент с заданным текстом или нет. 
 //Функция первым параметром должна принимать текст элемента, а вторым - массив, в котором делается поиск. 
 //Функция должна возвращать true или false
-var str = 'яблоко';
-var arr = ['банан', 'яблоко', 'персик'];
-console.log(inArray(str, arr));
+// var str = 'яблоко';
+// var arr = ['банан', 'яблоко', 'персик'];
+// console.log(inArray(str, arr));
 
-function inArray(str, arr) {
-    for (var i = 0; i < arr.length; i++) {    
-        if (arr[i] === str) {
-            return true;
-        }
-    }
-    return false;
-}
+// function inArray(str, arr) {
+//     for (var i = 0; i < arr.length; i++) {    
+//         if (arr[i] === str) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
 //=============================== task 09 =======================
 // Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей 
 //(чисел, на которое делится данное число)
-function getDivisors(num) {
-    let mass = [];
-    for (var i = 1; i <= num; i++) {
-        if(num % i == 0) {
-            mass.push(i);
-        }
-    }
-    return mass;
-}
-console.log(getDivisors(36));
+// function getDivisors(num) {
+//     let mass = [];
+//     for (var i = 1; i <= num; i++) {
+//         if(num % i == 0) {
+//             mass.push(i);
+//         }
+//     }
+//     return mass;
+// }
+// console.log(getDivisors(36));
 //=============================== task 10 =======================(1)
 /*Напиши функцию checkNumberType(num)
   Функция получает число num как аргумент и возвращает 
   строку "Even" если число четное и строку "Odd" если не четное.
 */
-
+function checkNumberType(num){
+    let num = 0;
+    for (var i = 1; i <= num; i ++){
+        if(num % i == 0){
+            
+        }
+    }
+}
 // // Вызовы функции для проверки
 // console.log( checkNumberType(2) ); // 'Even'
 
