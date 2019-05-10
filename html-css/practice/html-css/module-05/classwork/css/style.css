@@ -1,0 +1,163 @@
+.body{
+    padding-top: 100px;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .header {
+      background: rgba(0, 0, 255, .8);
+      position: fixed;
+      width:100%;
+      top: 0;
+      left: 0;
+      z-index: 11;
+  }
+  .navigation {
+    text-align: center;
+  }
+  
+  .link {
+    display: inline-block;
+    padding: 5px;
+    color: green;
+    font-size: 20px;
+    text-decoration: none;
+    /*border-bottom: 5px solid red;*/
+  }
+  
+  .link::after {
+    content: '';
+    opacity: 0;
+    margin-top: 10px;
+    width: 15px;
+    height: 5px;
+    display: block;
+    background: greenyellow;
+  }
+  
+  .link:hover::after {
+    opacity: .7; // 0.7
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    top: 32px;
+    font-size: 48px;
+}
+  
+  .items {
+    border: 1px solid #000;
+    text-align: center;
+  }
+  
+  .item {
+    display: inline-block;
+    width: 400px;
+    margin: 20px;
+    /*margin: 20px 30px;*/
+    /*margin: 20px 30px 40px*/
+    /*margin: 20px 30px 40px 40px*/
+  }
+  
+  .new_section_wrapper {
+    background-image: linear-gradient(rgba(235, 1, 165, 0.61), #d1353185), url(./50511885_10156242920697842_5257180016302620672_o.jpg);
+  }
+  
+  /*[class^="new"] {*/
+    /*border: 5px solid green;*/
+  /*}*/
+  
+  .section_absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+
+  .section_absolute h1 {
+    color: #fff;
+  }
+
+  .section_absolute_wrapper {
+      position: relative;
+  }
+
+  .section_absolute_wrapper img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .section_absolute {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.wrapper {
+    width: 600px;
+    margin: auto;
+    height: 500px;
+    overflow: scroll;
+    border: 1px solid transparent;
+  }
+  
+  .container_sticky{
+    margin-top: 150px;
+  }
+  
+  .aside,
+  .main {
+    display: inline-block;
+  }
+  
+  .aside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    width: 39%;
+    text-align: center;
+    height: 100%;
+    vertical-align: top;
+  }
+  
+  .main {
+    width: 59%;
+  }
+  
+  .box {
+    background-color: #eee;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  span {
+        font-family: sans-serif;
+        font-size: 180px;
+        text-transform: uppercase;
+        color: #41BAA9;
+        line-height: 1;
+  }
+
+  .header{
+      position: static;
+  }

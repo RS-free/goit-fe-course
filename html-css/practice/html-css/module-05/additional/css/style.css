@@ -1,0 +1,104 @@
+.body{
+    padding-top: 100px;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section_absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.section_absolute_wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.29) 100%), url('./../img/blue-sky-clear-sky-coconut-1068989.jpg');
+}
+
+.main_block {
+  width: 400px;
+  height: 400px;
+  background-color: #424242;
+  position: absolute;
+}
+
+.inner{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+}
+.block_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:#87cefa;
+}
+
+.block_2 {
+  position: absolute;
+  top: 0;
+  left: 37%;
+  background-color:	#20b2aa;
+}
+
+.block_3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color:	#ff1493	;
+}
+
+.block_4 {
+  position: absolute;
+  top: 37%;
+  left: 0;
+  background-color: #ff4500;
+}
+
+.block_5 {
+  position: absolute;
+  top: 37%;
+  left: 37%;
+  background-color:#ff6347;
+}
+
+.block_6 {
+  position: absolute;
+  top: 37%;
+  right: 0;;
+  background-color: #9370db;
+}
+
+.block_7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #00ff7f;
+}
+
+.block_8 {
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+  background-color: #ffd700;
+}
+
+.block_9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color:#1e90ff;
+}

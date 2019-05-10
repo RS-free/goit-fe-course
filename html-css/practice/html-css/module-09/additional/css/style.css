@@ -1,0 +1,67 @@
+/*point_1*/
+.box{
+  text-align: center;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.yellow{
+  background-color:yellow;
+}
+/*point_2*/
+.one{
+  background-color:goldenrod;
+}
+
+.two{
+  background-color:coral;
+}
+
+.three{
+  background-color:goldenrod;
+  color: burlywood
+}
+/*point_4*/
+.cat{
+  grid-column-start: 1;
+  grid-column-end: six;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+
+.puppy{
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+}
+
+.house{
+  grid-column-start: 1;
+  grid-column-end: six;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+
+.mirror{
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: row1-start;
+  grid-row-end: 1;
+}
+
+.nature{
+  grid-column-start: 1;
+  grid-column-end: six;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+
+.placement{
+  grid-column-start: 1;
+  grid-column-end: six;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
