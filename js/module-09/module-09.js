@@ -125,16 +125,52 @@ function updateClockface(val){
 //     clockface.textContent = counter;
 // }
 
-//DATE & TIME
-const date1 = new Date();//текущая дата и время
-const date2 = new Date('January, 1, 1990');//нужная дата в виде строки
-const date3 = new Date(1999, 6, 11, 15, 30, 0, 0);//точные дата и время в цифрах
-//месяцы считаются с 0, если указать 12й месяц, то выдаст январь след.года
-//то же самое с датой
-console.log(date1);
-console.log(date2);
-console.log(date3);
+// //DATE & TIME
+// const date1 = new Date();//текущая дата и время
+// const date2 = new Date('January, 1, 1990');//нужная дата в виде строки
+// const date3 = new Date(1999, 6, 11, 15, 30, 0, 0);//точные дата и время в цифрах
+// //месяцы считаются с 0, если указать 12й месяц, то выдаст январь след.года
+// //то же самое с датой
+// console.log(date1);
+// console.log(date2);
+// console.log(date3);
 
-//01.01.1970 - дата Unix - считается в мс
-const date4 = Date.now();
-console.log(date4);
+// //01.01.1970 - дата Unix - считается в мс
+// const date4 = Date.now();
+// console.log(date4);
+
+// //========================
+// setInterval(() => {
+//     console.log(new Date());
+// }, 1000);
+
+// const date = new Date();
+
+// console.log('date: ', date);//Fri May 10 2019 16:15:41 GMT+0300 (Восточная Европа, летнее время)
+// console.log('getDate: ', date.getDate());//10 - день (от 1 до 31)
+// console.log('getMonth: ', date.getMonth());//4 - месяц (от 0 до 11)
+// console.log('getTime: ', date.getTime());//1557494307684
+
+// console.log('getHours: ', date.getHours());//16
+// console.log('getMinutes: ', date.getMinutes());//21
+// console.log('getSeconds: ', date.getSeconds());//30
+// console.log('getMilliseconds: ', date.getMilliseconds());//485
+// //========================
+
+const time = 0;
+let startTime = Date.now();
+let deltaTime = 0;
+
+console.log(startTime);
+
+setInterval(() => {
+    const currentTime = Date.now();
+
+    deltaTime = currentTime - startTime;
+    const timeNew = new Date(deltaTime);
+
+    //console.log('seconds: ', timeNew.getSeconds());
+    
+    //console.log('deltaTime: ', deltaTime);
+    //console.log('currentTime: ', currentTime);
+}, 1000);
