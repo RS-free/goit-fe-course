@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  background: brown;
+  color: white;
+  padding: 20px;
+}
+
+.header span {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.headerLogged {
+  background: #571010;
+  border: 5px solid black;
+}

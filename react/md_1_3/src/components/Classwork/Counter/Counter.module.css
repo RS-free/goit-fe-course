@@ -1,0 +1,7 @@
+.btn {
+  border-radius: 50%;
+  background: rgba(94, 6, 6, 0.336);
+  color: black;
+  padding: 15px;
+  margin: 0 10px;
+}
