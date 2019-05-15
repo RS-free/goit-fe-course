@@ -60,9 +60,13 @@ const Header = ({ classes, logoTitle, logged }) => {
 };
 
 Header.propTypes = {
-  classes: PropTypes.object,
+  classes: PropTypes.shape.isRequired,
   logoTitle: PropTypes.string.isRequired,
   logged: PropTypes.bool,
+};
+
+Header.defaultProps = {
+  logged: false,
 };
 
 const StyledHeader = (() => injectSheet(inline)(Header))();

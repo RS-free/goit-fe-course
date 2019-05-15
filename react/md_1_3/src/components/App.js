@@ -42,20 +42,20 @@ class App extends Component {
   }
 
   onDecrement = () => {
-    this.setState({
-      count: this.state.count + 1,
-    });
+    this.setState(prevState => ({
+      count: prevState.count + 1,
+    }));
   };
 
   onIncrement = () => {
     if (this.state.count > 0)
-      this.setState({
-        count: this.state.count - 1,
-      });
+      this.setState(prevState => ({
+        count: prevState.count - 1,
+      }));
   };
 
   onSubmit = data => {
-    //console.log('submData', data);
+    // console.log('submData', data);
     const { users } = this.state;
     const newUsers = [...users];
     const userData = data;

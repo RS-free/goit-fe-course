@@ -26,7 +26,6 @@ class Form extends Component {
   };
 
   render() {
-    const { onSubmit } = this.props;
     return (
       <form action="" onSubmit={this.handleSubmit}>
         <input
@@ -54,7 +53,12 @@ class Form extends Component {
 }
 
 Form.propTypes = {
-  onSubmit: PropTypes.func,
+  onSubmit: PropTypes.func.isRequired,
 };
+
+// if not Required
+// Form.defaultProps = {
+//   onSubmit() {},
+// };
 
 export default Form;
