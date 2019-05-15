@@ -1,0 +1,11 @@
+.title {
+  text-transform: uppercase;
+}
+
+.item {
+  background: blue;
+}
+
+li {
+  list-style: none;
+}
