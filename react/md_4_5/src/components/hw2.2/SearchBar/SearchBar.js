@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './SearchBar.module.css';
 
-class SearchBar extends Comment {
+class SearchBar extends Component {
   constructor(value, onChange) {
     super(value, onChange);
     this.state = {};

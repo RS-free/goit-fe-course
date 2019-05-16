@@ -1,18 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './MovieGrid.module.css';
+import MovieGridItem from '../MovieGridItem/MovieGridItem';
 
-class MovieGrid extends Comment {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    const {} = this.state;
-    return <><div className={styles.movie-grid}>
-    <!-- Набор карточек фильмов -->
+const MovieGrid = () => (
+  <div className={styles['movie-grid']}>
+    <MovieGridItem />
   </div>
-  </>;
-  }
-}
+);
 
 export default MovieGrid;
