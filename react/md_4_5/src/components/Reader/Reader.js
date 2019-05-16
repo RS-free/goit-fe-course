@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Publication from '../Publication/Publication';
 import Counter from '../Counter/Counter';
 import Controls from '../Controls/Controls';
+import styles from './Reader.module.css';
 
 class Reader extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class Reader extends Component {
     console.log('prev');
     if (this.state.page > 0)
       this.setState(prevState => ({
-        page: prevState.copagent - 1,
+        page: prevState.page - 1,
       }));
   };
 
@@ -39,9 +40,11 @@ class Reader extends Component {
     const { items, page } = this.state;
     return (
       <>
-        <Publication data={items[page]} />
-        <Counter page={page} max={items.length} />
-        <Controls onNext={this.onNext} onPrev={this.onPrev} page={page} />
+        <div className={styles.reader}>
+          <Publication data={items[page]} />
+          <Counter page={page} max={items.length} />
+          <Controls onNext={this.onNext} onPrev={this.onPrev} page={page} />
+        </div>
       </>
     );
   }

@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './Controls.module.css';
 
 const Controls = ({ onPrev, onNext }) => (
   <div>
-    <button className="button" onClick={onPrev}>
+    <button className={styles.button} onClick={onPrev}>
       Prev
     </button>
-    <button className="button" onClick={onNext}>
+    <button className={styles.button} onClick={onNext}>
       Next
     </button>
   </div>
