@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Reader from './Reader/Reader';
-import Publication from './Publication/Publication';
-import Counter from './Counter/Counter';
-import Controls from './Controls/Controls';
+import data from './Publications.json';
 
 class App extends Component {
   state = { count: 0 };
@@ -14,19 +12,7 @@ class App extends Component {
   };
 
   render() {
-    return <div>App</div>;
-    // (
-    //   <>
-    //     <Reader />
-    //     <Counter
-    //       onIncrement={this.onIncrement}
-    //       onDecrement={this.onDecrement}
-    //       count={count}
-    //     />
-    //     <Publication />
-    //     <Controls />
-    //   </>
-    // );
+    return <Reader data={data} />;
   }
 }
 
