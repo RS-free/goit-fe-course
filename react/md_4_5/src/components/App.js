@@ -5,6 +5,8 @@ import data from './Publications.json';
 import MoviePage from './hw2.2/MoviePage/MoviePage';
 import movies from './movies.json';
 
+import Dashboard from './hw2.3/Dashboard/Dashboard';
+
 class App extends Component {
   state = { count: 0 };
 
@@ -19,6 +21,7 @@ class App extends Component {
       <>
         <Reader data={data} />
         <MoviePage movies={movies} />
+        <Dashboard />
       </>
     );
   }
