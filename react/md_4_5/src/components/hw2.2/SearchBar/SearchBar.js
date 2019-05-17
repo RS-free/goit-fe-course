@@ -6,6 +6,11 @@ class SearchBar extends Component {
     super(value, onChange);
     this.state = {};
   }
+
+  // onFilter = () => {
+
+  // }
+
   render() {
     const {} = this.state;
     return (
