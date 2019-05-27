@@ -1,0 +1,36 @@
+.todoList {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.todo {
+  width: 300px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 20px;
+  list-style: none;
+  position: relative;
+}
+
+
+.close {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  padding: 6px 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+}
+
+
+.checkbox {
+  position: absolute;
+  left: 2px;
+  top: 47px
+}
