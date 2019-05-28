@@ -7,7 +7,7 @@ import StoreList from '../../components/StoreList/StoreList';
 import StoreHeader from '../../components/StoreHeader/StoreHeader';
 import Cart from '../../components/Cart/Cart';
 import classes from './StorePage.module.css';
-import { addTodo, removeTodo, toggleComplete } from './storeActions';
+import { addStore } from './storeActions';
 
 class StorePage extends Component {
   state = {
@@ -101,9 +101,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  add: todo => dispatch(addTodo(todo)),
-  remove: id => dispatch(removeTodo(id)),
-  onToggleComplete: id => dispatch(toggleComplete(id)),
+  add: store => dispatch(addStore(store)),
 });
 
 export default connect(

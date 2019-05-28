@@ -1,20 +1,16 @@
-import {
-  STORE_ADD,
-  STORE_REMOVE,
-  STORE_TOGGLE_COMPLETE,
-} from '../../utils/constants';
+import { STORE_ADD, STORE_REMOVE } from '../../utils/constants';
 
-export const addTodo = todo => ({
+export const addStore = todo => ({
   type: STORE_ADD,
   payload: todo,
 });
 
-export const removeTodo = id => ({
+export const removeStore = id => ({
   type: STORE_REMOVE,
   payload: id,
 });
 
-export const toggleComplete = id => ({
-  type: STORE_TOGGLE_COMPLETE,
-  payload: id,
-});
+// export const toggleComplete = id => ({
+//   type: STORE_TOGGLE_COMPLETE,
+//   payload: id,
+// });

@@ -1,4 +1,10 @@
-import { CART_ADD, CART_REMOVE, CART_SHOW } from '../../utils/constants';
+import {
+  CART_ADD,
+  CART_REMOVE,
+  CART_SHOW,
+  CART_INCREMENT,
+  CART_DECREMENT,
+} from '../../utils/constants';
 
 export const addCart = data => ({
   type: CART_ADD,
@@ -12,4 +18,14 @@ export const removeCart = id => ({
 
 export const showCart = () => ({
   type: CART_SHOW,
+});
+
+export const increment = id => ({
+  type: CART_INCREMENT,
+  payload: id,
+});
+
+export const decrement = id => ({
+  type: CART_DECREMENT,
+  payload: id,
 });

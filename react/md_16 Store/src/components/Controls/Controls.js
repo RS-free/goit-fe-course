@@ -7,19 +7,33 @@ import classes from './Controls.module.css';
 
 class Controls extends Component {
   state = {
-    counter: 1,
+    counter: this.props.propsCounter,
   };
 
   onIncrement = () => {
-    this.setState(state => ({ counter: state.counter + 1 }));
+    const { id, onIncrement, disabledButton } = this.props;
+
+    this.setState(
+      state => ({ counter: state.counter + 1 }),
+      () => {
+        if (disabledButton) onIncrement(id);
+      },
+    );
   };
 
   onDecrement = () => {
-    this.setState(state => {
-      if (state.counter > 1) {
-        return { counter: state.counter - 1 };
-      }
-    });
+    const { id, onDecrement, disabledButton } = this.props;
+
+    this.setState(
+      state => {
+        if (state.counter > 1) {
+          return { counter: state.counter - 1 };
+        }
+      },
+      () => {
+        if (disabledButton) onDecrement(id);
+      },
+    );
   };
 
   onHandleAdd = () => {
@@ -31,7 +45,7 @@ class Controls extends Component {
 
   render() {
     const { counter } = this.state;
-    // const { add, data } = this.props;
+    const { disabledButton } = this.props;
 
     return (
       <>
@@ -52,21 +66,35 @@ class Controls extends Component {
             +
           </button>
         </div>
-        <button
-          onClick={this.onHandleAdd}
-          type="button"
-          className={classes.add}
-        >
-          Add
-        </button>
+        {!disabledButton && (
+          <button
+            onClick={this.onHandleAdd}
+            type="button"
+            className={classes.add}
+          >
+            Add
+          </button>
+        )}
       </>
     );
   }
 }
 
 Controls.propTypes = {
-  add: PropTypes.func.isRequired,
-  data: PropTypes.func.isRequired,
+  add: PropTypes.func,
+  data: PropTypes.shape({}),
+  disabledButton: PropTypes.bool,
+  propsCounter: PropTypes.number,
+  id: PropTypes.func.isRequired,
+  onIncrement: PropTypes.func.isRequired,
+  onDecrement: PropTypes.func.isRequired,
+};
+
+Controls.defaultProps = {
+  add() {},
+  data: {},
+  disabledButton: false,
+  propsCounter: 1,
 };
 
 const mapDispatchToProps = dispatch => ({

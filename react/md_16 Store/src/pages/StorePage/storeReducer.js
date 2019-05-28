@@ -1,8 +1,4 @@
-import {
-  STORE_ADD,
-  STORE_REMOVE,
-  STORE_TOGGLE_COMPLETE,
-} from '../../utils/constants';
+import { STORE_ADD, STORE_REMOVE } from '../../utils/constants';
 
 const initialStore = [
   {
@@ -27,16 +23,16 @@ const storeReducer = (state = initialStore, action) => {
       return [...state, action.payload];
     case STORE_REMOVE:
       return state.filter(el => el.id !== action.payload);
-    case STORE_TOGGLE_COMPLETE:
-      return state.map(el => {
-        if (el.id === action.payload) {
-          return {
-            ...el,
-            isCompleted: !el.isCompleted,
-          };
-        }
-        return el;
-      });
+    // case STORE_TOGGLE_COMPLETE:
+    //   return state.map(el => {
+    //     if (el.id === action.payload) {
+    //       return {
+    //         ...el,
+    //         isCompleted: !el.isCompleted,
+    //       };
+    //     }
+    //     return el;
+    //   });
     default:
       return state;
   }
