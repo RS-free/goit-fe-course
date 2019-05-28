@@ -1,0 +1,29 @@
+.modal {
+  width: 400px;
+  position: fixed;
+  right: 0;
+  top: 77px;
+  background: darkcyan;
+}
+
+.fade-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 500ms ease-in-out;
+}
+
+.fade-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fade-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}

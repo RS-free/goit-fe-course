@@ -1,10 +1,10 @@
 import {
-  TODOS_ADD,
-  TODOS_REMOVE,
-  TODOS_TOGGLE_COMPLETE,
+  STORE_ADD,
+  STORE_REMOVE,
+  STORE_TOGGLE_COMPLETE,
 } from '../../utils/constants';
 
-const initialTodos = [
+const initialStore = [
   {
     title: 'todo 1',
     description: 'descr',
@@ -21,13 +21,13 @@ const initialTodos = [
   },
 ];
 
-const todosReducer = (state = initialTodos, action) => {
+const storeReducer = (state = initialStore, action) => {
   switch (action.type) {
-    case TODOS_ADD:
+    case STORE_ADD:
       return [...state, action.payload];
-    case TODOS_REMOVE:
+    case STORE_REMOVE:
       return state.filter(el => el.id !== action.payload);
-    case TODOS_TOGGLE_COMPLETE:
+    case STORE_TOGGLE_COMPLETE:
       return state.map(el => {
         if (el.id === action.payload) {
           return {
@@ -42,4 +42,4 @@ const todosReducer = (state = initialTodos, action) => {
   }
 };
 
-export default todosReducer;
+export default storeReducer;

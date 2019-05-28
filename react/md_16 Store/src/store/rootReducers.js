@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import counterReducer from '../pages/HomePage/counterReducer';
-import todosReducer from '../pages/TodosPage/todosReducer';
+import storeReducer from '../pages/StorePage/storeReducer';
 import cartReducer from '../components/Cart/cartReducer';
 
 const rootReducers = combineReducers({
   counter: counterReducer,
-  todos: todosReducer,
+  store: storeReducer,
   cart: cartReducer,
 });
 

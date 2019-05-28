@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './TodoList.module.css';
+import Controls from '../Controls/Controls';
 
 const TodosList = ({ data, onHandleDelete, onHandleChecked }) => (
   <ul className={classes.todoList}>
@@ -21,6 +22,9 @@ const TodosList = ({ data, onHandleDelete, onHandleChecked }) => (
         >
           x
         </button>
+        <div className={classes.controls}>
+          <Controls data={el} />
+        </div>
       </li>
     ))}
   </ul>

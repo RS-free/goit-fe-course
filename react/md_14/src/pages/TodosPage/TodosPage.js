@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import TodosForm from '../../components/TodosForm/TodosForm';
 import TodosList from '../../components/TodosList/TodosList';
@@ -21,8 +22,9 @@ class TodosPage extends Component {
   onHandleSubmit = () => {
     const { add } = this.props;
     const id = new Date().getTime();
+    const cost = Math.floor(Math.random() * Math.floor(100));
     const { title, description } = this.state;
-    add({ id, title, description, isCompleted: false });
+    add({ id, title, description, isCompleted: false, cost });
   };
 
   onHandleDelete = id => {
@@ -79,6 +81,13 @@ class TodosPage extends Component {
     );
   }
 }
+
+TodosPage.propTypes = {
+  add: PropTypes.func.isRequired,
+  todos: PropTypes.func.isRequired,
+  remove: PropTypes.func.isRequired,
+  onToggleComplete: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = state => ({
   todos: state.todos,
