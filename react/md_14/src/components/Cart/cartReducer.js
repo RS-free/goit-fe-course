@@ -10,6 +10,7 @@ export default (state = initialState, { type, payload }) => {
   switch (type) {
     case CART_ADD: {
       if (state.items.find(el => el.id === payload.id)) {
+        // console.log('first');
         const newItems = state.items.map(el => {
           if (el.id === payload.id) {
             const count = el.count + payload.count;
@@ -27,6 +28,8 @@ export default (state = initialState, { type, payload }) => {
 
         return newState;
       }
+      // eslint-disable-next-line spaced-comment
+      //console.log('second');
       const newState = { ...state, items: [...state.items, payload] };
       const sum = checkSum(newState.items);
       newState.sum = sum;
